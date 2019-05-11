@@ -1,0 +1,39 @@
+/*
+ * Theme Name: min
+ *
+ * Layout: Content-Sidebar
+ *
+ * Learn more: https://developer.wordpress.org/themes/basics/template-files/
+*/
+
+#page {
+	display: flex;
+	min-height: calc(100vh - 2rem);
+	flex-direction: column;
+}
+
+#content, #primary {
+	flex-grow: 1;
+}
+
+.site-content {
+	display: flex;
+	flex-direction: column;
+}
+
+@media screen and (min-width: 42.5rem){
+	.site-content {
+		display: flex;
+		flex-direction: row;
+	}
+	.site-content .widget-area {
+		min-width: 12.5rem;
+		margin-left: 3.125rem;
+		max-height: 31rem;
+		position: sticky;
+		top: 2.25rem;
+	}
+}
+
+
+
