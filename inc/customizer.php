@@ -25,6 +25,44 @@ function min_customize_register( $wp_customize ) {
 			'render_callback' => 'min_customize_partial_blogdescription',
 		) );
 	}
+
+	// Footer
+	$wp_customize->add_section( 'min_footer_customizer' , array(
+		'title'      => __( 'Footer', 'min' ),
+		'priority'   => 30,
+	) );
+
+	// Footer options
+	$wp_customize->add_setting( 'footer_copyright' , array(
+		'default'   => '2019 all rights reserved',
+		'transport' => 'postMessage',
+	) );
+	$wp_customize->add_setting( 'footer_subtitle' , array(
+		'default'   => 'something about cookies',
+		'transport' => 'postMessage',
+	) );
+	$wp_customize->add_setting( 'footer_custom_html' , array(
+		'default'   => '',
+		'transport' => 'postMessage',
+	) );
+
+	// Footer controls
+	$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'footer_copyright_control', array(
+		'label'      => __( 'Copyright line', 'min' ),
+		'section'    => 'min_footer_customizer',
+		'settings'   => 'footer_copyright',
+	) ) );
+	$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'footer_subtitle_control', array(
+		'label'      => __( 'Subtitle line', 'min' ),
+		'section'    => 'min_footer_customizer',
+		'settings'   => 'footer_subtitle',
+	) ) );
+	$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'footer_customhtml_control', array(
+		'label'      => __( 'Last link (custom HTML supported, but won\'t show in customizer window)', 'min' ),
+		'section'    => 'min_footer_customizer',
+		'settings'   => 'footer_custom_html',
+		'type'       => 'textarea'
+	) ) );
 }
 add_action( 'customize_register', 'min_customize_register' );
 

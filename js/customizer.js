@@ -20,6 +20,25 @@
 		} );
 	} );
 
+	// Footer
+	wp.customize('footer_copyright', function (value) {
+        value.bind(function(to) {
+            $('#footer_copyright').text(to);
+        })
+    });
+
+    wp.customize('footer_subtitle', function (value) {
+        value.bind(function(to) {
+            $('#footer_subtitle').text(to);
+        })
+    });
+
+    wp.customize('footer_custom_html', function (value) {
+        value.bind(function(to) {
+            $('#footer_custom_html').text(to);
+        })
+    });
+
 	// Header text color.
 	wp.customize( 'header_textcolor', function( value ) {
 		value.bind( function( to ) {

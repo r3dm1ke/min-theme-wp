@@ -15,9 +15,11 @@
 
 	<footer id="colophon" class="site-footer">
 		<div class="site-info">
-			<span>by michael krasnov, 2019 <br>
-            <span>this website does not use cookies <br>
-            <span><a href="#">tw </a>|<a href="#"> tg </a>|<a href="#"> ig </a>|<a href="#"> lkdn</a></span>
+            <span>
+                <span id="footer_copyright"><?php echo get_theme_mod('footer_copyright') ?></span><br>
+                <span id="footer_subtitle"><?php echo get_theme_mod('footer_subtitle') ?></span><br>
+                <span id="footer_custom_html"><?php echo get_theme_mod('footer_custom_html') ?></span>
+            </span>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
