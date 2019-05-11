@@ -1059,38 +1059,39 @@ h6 a {
 	justify-content: flex-end;
 }
 
-.menu-main-menu-container {
+#primary-menu {
 	display: flex;
 	flex-grow: 1;
 	flex-direction: row;
 	align-items: center;
 }
 
-.menu-main-menu-container > ul {
+#primary-menu > ul {
 	display: flex;
 	flex-grow: 1;
 	justify-content: space-between;
 }
 
-.menu-main-menu-container ul li {
+#primary-menu ul li {
 	margin-left: 0.5rem;
 	margin-right: 0.5rem;
 }
 
-.menu-main-menu-container ul li::before {
+#primary-menu ul li::before {
 	content: '';
 }
 
-.menu-main-menu-container ul li a {
+#primary-menu ul li a {
 	color: #000;
 	font-style: normal;
+	text-transform: lowercase;
 }
 
 @media screen and (min-width: 42.5rem) {
 	#masthead {
 		flex-direction: row;
 	}
-	.menu-main-menu-container > ul {
+	#primary-menu > ul {
 		justify-content: flex-end;
 	}
 }
