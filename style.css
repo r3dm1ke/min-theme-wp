@@ -1060,29 +1060,32 @@ h6 a {
 	justify-content: flex-end;
 }
 
-#primary-menu {
+#primary-menu,
+#primary-menu ul {
 	display: flex;
 	flex-grow: 1;
 	flex-direction: row;
 	align-items: center;
 }
 
+#primary-menu,
 #primary-menu > ul {
 	display: flex;
 	flex-grow: 1;
 	justify-content: space-between;
 }
 
+#primary-menu li,
 #primary-menu ul li {
 	margin-left: 0.5rem;
 	margin-right: 0.5rem;
 }
-
-#primary-menu ul li::before {
+#primary-menu ul li::before,
+#primary-menu li::before {
 	content: '';
 }
-
-#primary-menu ul li a {
+#primary-menu ul li a,
+#primary-menu li a {
 	color: #000;
 	font-style: normal;
 	text-transform: lowercase;
@@ -1092,7 +1095,9 @@ h6 a {
 	#masthead {
 		flex-direction: row;
 	}
-	#primary-menu > ul {
+	#primary-menu,
+	#primary-menu ul 
+	{
 		justify-content: flex-end;
 	}
 }
