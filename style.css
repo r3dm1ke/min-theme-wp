@@ -1061,7 +1061,8 @@ h6 a {
 }
 
 #primary-menu,
-#primary-menu ul {
+#primary-menu ul,
+.menu-main-menu-container {
 	display: flex;
 	flex-grow: 1;
 	flex-direction: row;
@@ -1096,7 +1097,7 @@ h6 a {
 		flex-direction: row;
 	}
 	#primary-menu,
-	#primary-menu ul 
+	#primary-menu ul
 	{
 		justify-content: flex-end;
 	}
