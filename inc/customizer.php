@@ -26,7 +26,7 @@ function min_customize_register( $wp_customize ) {
 		) );
 	}
 
-	// Footer
+	// ============== Footer ==============
 	$wp_customize->add_section( 'min_footer_customizer' , array(
 		'title'      => __( 'Footer', 'min' ),
 		'priority'   => 30,
@@ -63,6 +63,48 @@ function min_customize_register( $wp_customize ) {
 		'settings'   => 'footer_custom_html',
 		'type'       => 'textarea'
 	) ) );
+
+	// =============== Glitch =================
+	$wp_customize->add_section('min_glitch_customizer', array(
+		'title'     => __('Glitch Effect', 'min'),
+		'priority'  => 30
+	));
+
+	$wp_customize->add_setting('min_glitch_turned_on', array(
+		'default'   => '1',
+		'transport' => 'refresh'
+	));
+
+	$wp_customize->add_setting('min_glitch_color_1', array(
+		'default'   => '#0ff',
+		'transport' => 'refresh',
+		'sanitize_callback' => 'sanitize_hex_color'
+	));
+
+	$wp_customize->add_setting('min_glitch_color_2', array(
+		'default'   => '#f0f',
+		'transport' => 'refresh',
+		'sanitize_callback' => 'sanitize_hex_color'
+	));
+
+	$wp_customize->add_control(new WP_Customize_Control($wp_customize, 'min_glitch_turned_on', array(
+		'label'     => __('Turn Glitch effect on hover globally', 'min'),
+		'section'   => 'min_glitch_customizer',
+		'settings'  => 'min_glitch_turned_on',
+		'type'      => 'checkbox'
+	)));
+
+	$wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'min_glitch_color_1', array(
+		'label'     => __('Glitch color #1', 'min'),
+		'section'   => 'min_glitch_customizer',
+		'settings'  => 'min_glitch_color_1'
+	)));
+
+	$wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'min_glitch_color_2', array(
+		'label'     => __('Glitch color #2', 'min'),
+		'section'   => 'min_glitch_customizer',
+		'settings'  => 'min_glitch_color_2'
+	)));
 }
 add_action( 'customize_register', 'min_customize_register' );
 

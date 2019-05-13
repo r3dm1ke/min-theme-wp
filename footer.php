@@ -24,7 +24,10 @@
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
-<?php wp_footer(); ?>
+<?php
+wp_footer();
+min_get_glitch_stylesheet();
+?>
 
 </body>
 </html>

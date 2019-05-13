@@ -177,7 +177,9 @@ function min_scripts() {
 	wp_enqueue_script('min-night-mode-script', get_template_directory_uri() . '/js/night_mode.js', array(), '20190510', true );
 
 	// Glitch effect
-	wp_enqueue_script('min-glitch-effect-script', get_template_directory_uri() . '/js/glitch.js', array(), '20190510', true );
+	if (get_theme_mod('min_glitch_turned_on') == '1') {
+		wp_enqueue_script( 'min-glitch-effect-script', get_template_directory_uri() . '/js/glitch.js', array(), '20190510', true );
+	}
 
 	// Search form
 	wp_enqueue_script('min-search-form', get_template_directory_uri() . '/js/search.js', array(), '20190510', true );
@@ -295,6 +297,11 @@ require get_template_directory() . '/inc/customizer.php';
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
+
+/**
+ * Glitch effect
+ */
+require get_template_directory() . '/inc/glitch.php';
 
 /**
  * Load styles for editor
