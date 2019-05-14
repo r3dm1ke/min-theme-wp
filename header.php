@@ -46,6 +46,16 @@
 				'menu_id'        => 'primary-menu',
 			) );
 			?>
+            <div class="menu-main-menu-container permanent-menu-container">
+                <ul id="permanent-menu" class="menu">
+                    <li id="menu-item-9" class="night_mode_toggle menu-item menu-item-type-custom menu-item-object-custom">
+                        <a href="#" data-glitch="night mode" class="glitch">night mode</a>
+                    </li>
+                    <li id="menu-item-10" class="search-trigger menu-item menu-item-type-custom menu-item-object-custom">
+                        <a href="#" data-glitch="search" class="glitch">search</a>
+                    </li>
+                </ul>
+            </div>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
 

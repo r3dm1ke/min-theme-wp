@@ -418,6 +418,8 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: 500;
 	width: 100%;
 	max-width: 100% !important;
+	line-height: 1.1;
+	color: #222;
 }
 
 h1 {
@@ -972,8 +974,8 @@ h6 a {
 	justify-content: flex-end;
 }
 
-#primary-menu,
-#primary-menu ul,
+.menu ,
+.menu  ul,
 .menu-main-menu-container {
 	display: flex;
 	flex-grow: 1;
@@ -981,27 +983,31 @@ h6 a {
 	align-items: center;
 }
 
-#primary-menu,
-#primary-menu > ul {
-	display: flex;
+.menu ,
+.menu  > ul {
+	display: flex !important;
 	flex-grow: 1;
 	justify-content: space-between;
 }
 
-#primary-menu li,
-#primary-menu ul li {
+.menu li,
+.menu ul li {
 	margin-left: 0.5rem;
 	margin-right: 0.5rem;
 }
-#primary-menu ul li::before,
-#primary-menu li::before {
+.menu ul li::before,
+.menu li::before {
 	content: '';
 }
-#primary-menu ul li a,
-#primary-menu li a {
+.menu ul li a,
+.menu li a {
 	color: #000;
 	font-style: normal;
 	text-transform: lowercase;
+}
+
+.permanent-menu-container {
+	flex-grow: 0;
 }
 
 @media screen and (min-width: 42.5rem) {
@@ -1277,6 +1283,10 @@ article.post {
 	font-family: "Cabin", sans-serif;
 	font-style: italic;
 	color: #000;
+}
+
+.wp-block-media-text {
+	align-items: start;
 }
 
 /*--------------------------------------------------------------

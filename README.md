@@ -11,3 +11,7 @@
 - Highly optimized
 - Documented and organized
 - SEO friendly
+
+### Contributing
+The theme is in active development. If you spot a bug, fell free to submit it to issues, or fix it with a pull request.
+The theme is based on [underscores](https://underscores.me/) framework.
