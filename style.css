@@ -1,11 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=BioRhyme|Cabin:400,400i,700');
-
 /*!
 Theme Name: min
-Theme URI: http://underscores.me/
-Author: Underscores.me
-Author URI: http://underscores.me/
-Description: Description
+Theme URI: http://github.com/r3dm1ke/min_theme_wp
+Author: Michael Krasnov
+Author URI: http://github.com/r3dm1ke/min_theme_wp
+Description: A minimalist theme for wordpress with focus for speed, privacy and compatibility.
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
@@ -46,6 +44,9 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	## Galleries
 # Woocommerce
 --------------------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css?family=BioRhyme|Cabin:400,400i,700');
+
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
@@ -959,6 +960,17 @@ h6 a {
 .site-branding {
 	flex-grow: 1;
 	min-width: 19rem;
+	display: flex;
+	flex-direction: column;
+}
+
+.site-title {
+	margin: 0;
+}
+
+.site-description {
+	margin: 0 0 0 .15rem;
+	opacity: 0.75;
 }
 
 .site-title a {

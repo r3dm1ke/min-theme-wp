@@ -62,7 +62,7 @@ if ( ! function_exists( 'min_setup' ) ) :
 		if (!function_exists('searchform_hideable')) {
 			function searchform_hideable() {
 				?>
-				<form role="search" method="get" class="search-form hidden" action="http://localhost/" wtx-context="46BAD25B-5711-4970-AF68-E68D30F901A1" name="form">
+				<form role="search" method="get" class="search-form hidden" action="<?php echo home_url( '/' ); ?>" wtx-context="46BAD25B-5711-4970-AF68-E68D30F901A1" name="form">
 					<label>
 						<span class="screen-reader-text">Search for:</span>
 						<input type="search" class="search-field" placeholder="Search ..." value="" name="s" wtx-context="7CAD94C8-71F2-4A93-8B2A-390F32FA3256">
@@ -89,7 +89,7 @@ if ( ! function_exists( 'min_setup' ) ) :
 		 * @link https://codex.wordpress.org/Theme_Logo
 		 */
 		add_theme_support( 'custom-logo', array(
-			'height'      => 250,
+			'height'      => 100,
 			'width'       => 250,
 			'flex-width'  => true,
 			'flex-height' => true,
@@ -130,7 +130,7 @@ function min_content_width() {
 	// This variable is intended to be overruled from themes.
 	// Open WPCS issue: {@link https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards/issues/1043}.
 	// phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound
-	$GLOBALS['content_width'] = apply_filters( 'min_content_width', 640 );
+	$GLOBALS['content_width'] = apply_filters( 'min_content_width', 1024 );
 }
 add_action( 'after_setup_theme', 'min_content_width', 0 );
 
