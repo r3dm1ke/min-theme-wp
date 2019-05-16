@@ -38,6 +38,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	## Posts and pages
 	## Archives
 	## Comments
+	## Tables
 # Infinite scroll
 # Media
 	## Captions
@@ -1356,6 +1357,25 @@ article.post {
 .comment-list ul li::before {
 	content: '';
 }
+
+/*--------------------------------------------------------------
+# Tables
+--------------------------------------------------------------*/
+table {
+	border-collapse: collapse;
+}
+table, th, td {
+	border: 1px solid #ddd;
+}
+th, td {
+	padding: 1rem;
+	text-align: left;
+}
+
+th {
+	font-weight: 700;
+}
+
 
 /*--------------------------------------------------------------
 # Infinite scroll

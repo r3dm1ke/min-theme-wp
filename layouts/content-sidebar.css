@@ -16,6 +16,10 @@
 	flex-grow: 1;
 }
 
+#primary {
+	max-width: 44rem;
+}
+
 .site-content {
 	display: flex;
 	flex-direction: column;
