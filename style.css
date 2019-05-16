@@ -36,6 +36,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 # Widgets
 # Content
 	## Posts and pages
+	## Post navigation
 	## Archives
 	## Comments
 	## Tables
@@ -623,7 +624,8 @@ li.blocks-gallery-item::before {
 button,
 input[type="button"],
 input[type="reset"],
-input[type="submit"] {
+input[type="submit"]
+{
 	background-color: #fff;
 	border: 1px solid #000;
 	color: #000;
@@ -935,21 +937,6 @@ h6 a {
 .post-navigation {
 	margin: 0 0 3em;
 	overflow: hidden;
-}
-
-.comment-navigation .nav-previous,
-.posts-navigation .nav-previous,
-.post-navigation .nav-previous {
-	float: left;
-	width: 50%;
-}
-
-.comment-navigation .nav-next,
-.posts-navigation .nav-next,
-.post-navigation .nav-next {
-	float: right;
-	text-align: right;
-	width: 50%;
 }
 
 /*--------------------------------------------------------------
@@ -1325,6 +1312,49 @@ article.post {
 .error-404 .page-title,
 .error-404 .error-404-subtitle {
 	text-align: center
+}
+
+/*--------------------------------------------------------------
+## Post navigation
+--------------------------------------------------------------*/
+
+.nav-links {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.nav-next, .nav-previous {
+	border: 1px solid black;
+	background-color: white;
+	text-align: center;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	transition: background-color .2s;
+}
+
+.nav-next:hover,
+.nav-next:focus,
+.nav-next:active,
+.nav-previous:hover,
+.nav-previous:focus,
+.nav-previous:active{
+	background-color: black;
+}
+
+.nav-next:hover a ,
+.nav-next:focus a ,
+.nav-next:active a ,
+.nav-previous:hover a ,
+.nav-previous:focus a ,
+.nav-previous:active a {
+	color: white;
+}
+
+.nav-next a, .nav-previous a {
+	color: black;
+	text-transform: lowercase;
+	font-style: normal;
 }
 
 /*--------------------------------------------------------------
