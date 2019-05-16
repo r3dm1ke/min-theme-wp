@@ -1249,6 +1249,11 @@ h6 a {
 	padding-left: 1rem;
 }
 
+.post-password-required {
+	border-left: solid 2rem #f28686;
+	padding-left: 1rem;
+}
+
 .post,
 .page {
 	margin: 0 0 1.5em;
@@ -1272,6 +1277,8 @@ h6 a {
 
 .entry-title {
 	margin-bottom: .5rem;
+	-ms-word-wrap: break-word;
+	word-wrap: break-word;
 }
 
 .nosidebar .type-page .entry-title {
@@ -1331,6 +1338,11 @@ article.post {
 	padding-left: 1rem;
 	padding-right: 1rem;
 	transition: background-color .2s;
+	text-overflow: ellipsis;
+
+	/* Required for text-overflow to do anything */
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 .nav-next:hover,
@@ -1363,6 +1375,12 @@ article.post {
 .archive .page-title {
 	text-transform: lowercase;
 	opacity: .5;
+}
+
+.archive-description {
+	text-align: center;
+	opacity: .8;
+	text-transform: lowercase;
 }
 
 /*--------------------------------------------------------------

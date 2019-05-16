@@ -20,6 +20,10 @@
 	max-width: 44rem;
 }
 
+#primary.primary-nosidebar {
+	max-width: 64rem;
+}
+
 .site-content {
 	display: flex;
 	flex-direction: column;
