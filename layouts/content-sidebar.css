@@ -28,10 +28,11 @@
 	}
 	.site-content .widget-area {
 		min-width: 12.5rem;
+		max-width: 20rem;
 		margin-left: 3.125rem;
 		max-height: 31rem;
-		position: sticky;
-		top: 2.25rem;
+		/*position: sticky;
+		top: 2.25rem;*/
 	}
 }
 
