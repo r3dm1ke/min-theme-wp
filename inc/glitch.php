@@ -9,6 +9,7 @@ if (!function_exists('min_get_glitch_stylesheet')) {
 					text-decoration: none;
 					margin: 0;
 					position: relative;
+                    display: block;
 				}
 
 				.glitch:before, .glitch:after {
