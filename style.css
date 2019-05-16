@@ -1257,6 +1257,12 @@ h6 a {
 	display: none;
 }
 
+.page-title {
+	text-align: center;
+	font-size: 1.7rem;
+	margin-top: 3rem;
+}
+
 .page-content,
 .entry-content,
 .entry-summary {
