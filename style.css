@@ -128,7 +128,6 @@ a {
 
 abbr[title] {
 	border-bottom: none; /* 1 */
-	text-decoration: underline; /* 2 */
 	text-decoration: underline dotted; /* 2 */
 }
 
@@ -925,8 +924,8 @@ h6 a {
 	}
 } */
 
-.site-main .comment-navigation, .site-main
-.posts-navigation, .site-main
+.site-main .comment-navigation, .site-main,
+.posts-navigation, .site-main,
 .post-navigation {
 	margin: 0 0 3em;
 	overflow: hidden;
@@ -1102,7 +1101,6 @@ h6 a {
 	clip-path: none;
 	color: #21759b;
 	display: block;
-	font-size: 14px;
 	font-size: 0.875rem;
 	font-weight: bold;
 	height: auto;
@@ -1246,6 +1244,8 @@ h6 a {
 --------------------------------------------------------------*/
 .sticky {
 	display: block;
+	border-left: 2rem solid #ddd;
+	padding-left: 1rem;
 }
 
 .post,
@@ -1478,7 +1478,7 @@ body.night_mode img, body.night_mode .has-background-dim {
 }
 
 .woocommerce div.product form.cart .button:hover,
-.woocommerce div.product form.cart .button:active
+.woocommerce div.product form.cart .button:active,
 .woocommerce div.product form.cart .button:focus {
     background-color: #000;
     color: #fff;

@@ -15,7 +15,6 @@
         }
 
         const toggle = document.querySelector('.night_mode_toggle');
-        console.log(toggle);
         toggle.onclick = function () {
             if (allowed === 0) {
                 if (confirm('Enabling night mode means a cookie will be stored to make night mode persistent. It will ' +
