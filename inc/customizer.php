@@ -34,11 +34,11 @@ function min_customize_register( $wp_customize ) {
 
 	// Footer options
 	$wp_customize->add_setting( 'footer_copyright' , array(
-		'default'   => '2019 all rights reserved',
+		'default'   => __('2019 all rights reserved', 'min'),
 		'transport' => 'postMessage',
 	) );
 	$wp_customize->add_setting( 'footer_subtitle' , array(
-		'default'   => 'something about cookies',
+		'default'   => __('something about cookies', 'min'),
 		'transport' => 'postMessage',
 	) );
 	$wp_customize->add_setting( 'footer_custom_html' , array(
