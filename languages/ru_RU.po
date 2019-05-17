@@ -1,0 +1,216 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: min\n"
+"POT-Creation-Date: 2019-05-17 12:09-0400\n"
+"PO-Revision-Date: 2019-05-17 12:17-0400\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ru_RU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.7\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: style.css\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: 404.php:18
+msgid "page does not exist"
+msgstr "страница не найдена"
+
+#: 404.php:22
+msgid "someone possibly made a typo in the link"
+msgstr "возможно, в ссылке опечатка"
+
+#: 404.php:23
+msgid "try searching or go to "
+msgstr "попробуйте поиск или перейдите в"
+
+#: comments.php:36
+#, php-format
+msgid "%s"
+msgstr ""
+
+#: comments.php:38
+#, php-format
+msgid "%1$s"
+msgstr ""
+
+#. translators: 1: title.
+#: comments.php:62
+msgid "one comment"
+msgstr "один комментарий"
+
+#. translators: 1: comment count number, 2: title.
+#: comments.php:67
+#, php-format
+msgctxt "comments title"
+msgid "%1$s comment"
+msgid_plural "%1$s comments"
+msgstr[0] "%1$s комментарий"
+msgstr[1] "%1$s комментария"
+msgstr[2] "%1$s комментариев"
+
+#: comments.php:87
+msgid "comments are closed."
+msgstr "комментарии закрыты."
+
+#: functions.php:47
+msgid "Primary"
+msgstr "Главный"
+
+#: functions.php:144
+msgid "Sidebar"
+msgstr "Сайдбар"
+
+#: functions.php:146
+msgid "Add widgets here."
+msgstr "Добавляй виджеты сюда."
+
+#: header.php:24
+msgid "Skip to content"
+msgstr "Пропустить до контента"
+
+#: header.php:41
+msgid "Primary Menu"
+msgstr "Главное меню"
+
+#: inc/customizer.php:31
+msgid "Footer"
+msgstr "Подвал"
+
+#: inc/customizer.php:37
+msgid "2019 all rights reserved"
+msgstr "2019 все права защищены"
+
+#: inc/customizer.php:41
+msgid "something about cookies"
+msgstr "что-то о куки"
+
+#: inc/customizer.php:51
+msgid "Copyright line"
+msgstr "Строка копирайта"
+
+#: inc/customizer.php:56
+msgid "Subtitle line"
+msgstr "Строка подзаголовка"
+
+#: inc/customizer.php:61
+msgid "Last link (custom HTML supported, but won't show in customizer window)"
+msgstr ""
+"Последняя строка (поддерживается кастомный HTML, но он не будет работать в "
+"окне кастомайзера)"
+
+#: inc/customizer.php:69
+msgid "Glitch Effect"
+msgstr "Glitch эффект"
+
+#: inc/customizer.php:91
+msgid "Turn Glitch effect on hover globally"
+msgstr "Включить glitch эффект по наведению мышки глобально"
+
+#: inc/customizer.php:98
+msgid "Glitch color #1"
+msgstr "Glitch цвет #1"
+
+#: inc/customizer.php:104
+msgid "Glitch color #2"
+msgstr "Glitch цвет #2"
+
+#. translators: %s: post date.
+#: inc/template-tags.php:29
+#, php-format
+msgctxt "post date"
+msgid "%s"
+msgstr ""
+
+#. translators: %s: post author.
+#: inc/template-tags.php:45
+#, php-format
+msgctxt "post author"
+msgid "by %s"
+msgstr ""
+
+#. translators: %s: Name of current post. Only visible to screen readers
+#: inc/template-tags.php:92 template-parts/content-homepage.php:26
+#: template-parts/content-page-notitle.php:31
+#: template-parts/content-page.php:37
+#, php-format
+msgid "Edit <span class=\"screen-reader-text\">%s</span>"
+msgstr "Редактировать <span class=\"screen-reader-text\">%s</span>"
+
+#. translators: %s: search query.
+#: search.php:22
+#, php-format
+msgid "Search Results for: %s"
+msgstr "Результаты поиска по: %s"
+
+#: single.php:23
+msgid "<< %title <<"
+msgstr ""
+
+#: single.php:24
+msgid ">> %title >>"
+msgstr ""
+
+#: template-parts/content-none.php:14
+msgid "Nothing Found"
+msgstr "Ничего не найдено"
+
+#. translators: 1: link to WP admin new post page.
+#: template-parts/content-none.php:24
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+"Готовы опубликовать свой первый пост? <a href=\"%1$s\">Начните здесь</a>."
+
+#: template-parts/content-none.php:37
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr "По вашему запросу ничего не найдено, попробуйте перефразировать."
+
+#: template-parts/content-none.php:44
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr "Мы не можем найти то, что вы ищете. Попробуйте перефразировать."
+
+#: template-parts/content-page-notitle.php:18
+#: template-parts/content-page.php:24 template-parts/content.php:51
+msgid "Pages:"
+msgstr "Страницы:"
+
+#. translators: %s: Name of current post. Only visible to screen readers
+#: template-parts/content.php:40
+#, php-format
+msgid "read more<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr "читать дальше<span class=\"screen-reader-text\"> \"%s\"</span>"
+
+#. Theme Name of the plugin/theme
+msgid "min"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+#. Author URI of the plugin/theme
+msgid "http://github.com/r3dm1ke/min_theme_wp"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"A minimalist theme for wordpress with focus for speed, privacy and "
+"compatibility."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Michael Krasnov"
+msgstr ""
