@@ -895,7 +895,7 @@ h6 a {
 
 .main-navigation ul ul li:hover > ul,
 .main-navigation ul ul li.focus > ul {
-	left: 100%;
+	top: 100%;
 }
 
 .main-navigation ul ul a {
@@ -980,7 +980,7 @@ h6 a {
 
 .menu ,
 .menu  ul,
-.menu-main-menu-container {
+nav#site-navigation div {
 	display: flex;
 	flex-grow: 1;
 	flex-direction: row;
@@ -1011,7 +1011,18 @@ h6 a {
 }
 
 .permanent-menu-container {
-	flex-grow: 0;
+	flex-grow: 0 !important;
+}
+
+#primary-menu .sub-menu {
+	display: flex;
+	flex-direction: column;
+	box-shadow: none;
+	background-color: white;
+}
+
+#primary-menu .sub-menu li {
+	padding: 1rem;
 }
 
 @media screen and (min-width: 42.5rem) {
@@ -1019,7 +1030,7 @@ h6 a {
 		flex-direction: row;
 	}
 	#primary-menu,
-	#primary-menu ul
+	#primary-menu > ul
 	{
 		justify-content: flex-end;
 	}
@@ -1060,8 +1071,10 @@ h6 a {
 	margin-right: .5rem;
 }
 
-.main-navigation .hidden {
-	display: none;
+.primary-menu-container.hidden,
+.permanent-menu-container.hidden,
+.search-form.hidden {
+	display: none !important;
 }
 
 @media screen and (min-width: 42.5rem) {

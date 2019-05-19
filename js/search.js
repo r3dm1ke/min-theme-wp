@@ -1,7 +1,7 @@
 (function() {
     document.addEventListener('DOMContentLoaded', function() {
         const search_trigger = document.querySelector('.search-trigger a');
-        const menu_container = document.querySelector('.menu-main-menu-container');
+        const menu_container = document.querySelector('.primary-menu-container');
         const search_hide_trigger = document.querySelector('#search-hide-trigger');
         const search_container = document.querySelector('.search-form');
         const permanent_menu_container = document.querySelector('.permanent-menu-container')

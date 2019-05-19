@@ -42,11 +42,12 @@
             <?php searchform_hideable() ?>
 			<?php
 			wp_nav_menu( array(
-				'theme_location' => 'menu-1',
-				'menu_id'        => 'primary-menu',
+				'theme_location'    => 'menu-1',
+				'menu_id'           => 'primary-menu',
+                'container_class'   => 'primary-menu-container'
 			) );
 			?>
-            <div class="menu-main-menu-container permanent-menu-container">
+            <div class="permanent-menu-container">
                 <ul id="permanent-menu" class="menu">
                     <li id="menu-item-9" class="night_mode_toggle menu-item menu-item-type-custom menu-item-object-custom">
                         <a href="#" data-glitch="night mode" class="glitch">night mode</a>
