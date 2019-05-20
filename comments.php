@@ -33,9 +33,9 @@ if ( post_password_required() ) {
         <li <?php comment_class(); ?> id="li-comment-<?php comment_ID() ?>">
 
             <div class="comment-intro">
-                <?php printf(__('%s'), strtolower(get_comment_author_link())) ?>
+                <?php printf(__('%s', 'min'), strtolower(get_comment_author_link())) ?>
                 <it> | </it>
-                <a class="comment-permalink" href="<?php echo htmlspecialchars ( get_comment_link( $comment->comment_ID ) ) ?>"><?php printf(__('%1$s'), strtolower(get_comment_date()), strtolower(get_comment_time())) ?></a>
+                <a class="comment-permalink" href="<?php echo htmlspecialchars ( get_comment_link( $comment->comment_ID ) ) ?>"><?php printf(__('%1$s', 'min'), strtolower(get_comment_date()), strtolower(get_comment_time())) ?></a>
             </div>
 
             <?php if ($comment->comment_approved == '0') : ?>

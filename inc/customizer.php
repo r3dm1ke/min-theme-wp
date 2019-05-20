@@ -36,14 +36,17 @@ function min_customize_register( $wp_customize ) {
 	$wp_customize->add_setting( 'footer_copyright' , array(
 		'default'   => __('2019 all rights reserved', 'min'),
 		'transport' => 'postMessage',
+		'sanitize_callback' => 'wp_filter_nohtml_kses'
 	) );
 	$wp_customize->add_setting( 'footer_subtitle' , array(
 		'default'   => __('something about cookies', 'min'),
 		'transport' => 'postMessage',
+		'sanitize_callback' => 'wp_filter_nohtml_kses'
 	) );
 	$wp_customize->add_setting( 'footer_custom_html' , array(
 		'default'   => '',
 		'transport' => 'postMessage',
+		'sanitize_callback' => 'wp_kses_post'
 	) );
 
 	// Footer controls
@@ -72,7 +75,8 @@ function min_customize_register( $wp_customize ) {
 
 	$wp_customize->add_setting('min_glitch_turned_on', array(
 		'default'   => '1',
-		'transport' => 'refresh'
+		'transport' => 'refresh',
+		'sanitize_callback' => 'wp_filter_nohtml_kses'
 	));
 
 	$wp_customize->add_setting('min_glitch_color_1', array(

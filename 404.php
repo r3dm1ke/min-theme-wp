@@ -20,7 +20,7 @@ get_header();
 
 				<div class="page-content">
 					<p class="error-404-subtitle"><?php _e( 'someone possibly made a typo in the link', 'min' ); ?><br>
-                    <?php _e('try searching or go to ', 'min'); ?><a href="<? echo get_home_url() ?>">home page</a></p>
+                    <?php _e('try searching or go to ', 'min'); ?><a href="<?php echo get_home_url() ?>">home page</a></p>
 				</div><!-- .page-content -->
 			</section><!-- .error-404 -->
 
