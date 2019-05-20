@@ -762,6 +762,19 @@ textarea {
 	margin-bottom: 1.5rem;
 }
 
+@media screen and (min-width: 42.5rem) {
+	#comments .comment_flex_right_wrapper {
+		max-width: 68%;
+	}
+}
+
+/* Comment navigation */
+#comments .navigation {
+	width: 100%;
+	flex-basis: 100%;
+	order: 10;
+}
+
 /*--------------------------------------------------------------
 # Comment forms
 --------------------------------------------------------------*/

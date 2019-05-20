@@ -51,7 +51,6 @@ if ( post_password_required() ) {
             <?php }
 		?>
 
-		<?php the_comments_navigation(); ?>
         <div class="comment_flex_right_wrapper">
             <h3 class="comments-title">
 		        <?php
