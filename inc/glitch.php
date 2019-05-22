@@ -34,13 +34,17 @@ if (!function_exists('min_get_glitch_stylesheet')) {
 					z-index: -1;
 				}
 
-				.glitch:hover:before {
+				.glitch:hover:before,
+                .glitch:focus:before,
+                .glitch:active:before {
 					-webkit-animation: glitch 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both 10;
 					animation: glitch 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both 10;
 					opacity: .8;
 				}
 
-				.glitch:hover:after {
+                .glitch:hover:after,
+                .glitch:focus:after,
+                .glitch:active:after {
 					animation: glitch 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both 10;
 					opacity: .8;
 				}
