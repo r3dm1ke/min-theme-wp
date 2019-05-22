@@ -11,6 +11,15 @@
             menu_container.classList.toggle('hidden');
             search_container.classList.toggle('hidden');
             permanent_menu_container.classList.toggle('hidden');
+
+            if (menu_container.classList.contains('hidden')) menu_container.setAttribute('aria-hidden', 'true');
+            else menu_container.setAttribute('aria-hidden', 'false');
+
+            if (search_container.classList.contains('hidden')) menu_container.setAttribute('aria-hidden', 'true');
+            else search_container.setAttribute('aria-hidden', 'false');
+
+            if (permanent_menu_container.classList.contains('hidden')) menu_container.setAttribute('aria-hidden', 'true');
+            else permanent_menu_container.setAttribute('aria-hidden', 'false');
         };
 
         search_trigger.onclick = toggle_search;
