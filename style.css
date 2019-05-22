@@ -8,7 +8,7 @@ Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
 Text Domain: min
-Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready, editor-style, blog, e-commerce, portfolio, two-columns, right-sidebar, accessibility-ready
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready, editor-style, blog, e-commerce, portfolio, two-columns, right-sidebar, accessibility-ready, full-width-template, sticky-post, theme-options, block-styles, wide-blocks
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
@@ -1285,6 +1285,11 @@ nav#site-navigation div {
 .post,
 .page {
 	margin: 0 0 1.5em;
+}
+
+.post .entry-content a,
+.page .entry-content a {
+	text-decoration: underline;
 }
 
 .updated:not(.published) {

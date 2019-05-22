@@ -64,11 +64,11 @@ if ( ! function_exists( 'min_setup' ) ) :
 				?>
 				<form aria-hidden="true" role="search" method="get" class="search-form hidden" action="<?php echo home_url( '/' ); ?>" wtx-context="46BAD25B-5711-4970-AF68-E68D30F901A1" name="form">
 					<label>
-						<span class="screen-reader-text">Search for:</span>
-						<input tabindex='1' type="search" class="search-field" placeholder="Search ..." value="" name="s" wtx-context="7CAD94C8-71F2-4A93-8B2A-390F32FA3256">
+						<span class="screen-reader-text"><?php _e('Search for:', 'min') ?></span>
+						<input type="search" class="search-field" placeholder="Search ..." value="" name="s" wtx-context="7CAD94C8-71F2-4A93-8B2A-390F32FA3256">
 					</label>
-					<a class="search-submit glitch" tabindex='2' onclick="form.submit()">search</a>
-					<a class="search-hide glitch" tabindex='3' id="search-hide-trigger">hide</a>
+					<a class="search-submit glitch" tabindex='0' onclick="form.submit()">search</a>
+					<a class="search-hide glitch" tabindex='0' id="search-hide-trigger">hide</a>
 				</form>
 				<?php
 			}
