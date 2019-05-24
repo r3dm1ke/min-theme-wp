@@ -21,6 +21,7 @@
                 <span id="footer_custom_html"><?php echo get_theme_mod('footer_custom_html') ?></span>
             </span>
 		</div><!-- .site-info -->
+        <?php min_setup_cookie_banner() ?>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 

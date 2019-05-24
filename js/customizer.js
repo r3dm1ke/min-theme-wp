@@ -21,23 +21,48 @@
 	} );
 
 	// Footer
-	wp.customize('footer_copyright', function (value) {
+	wp.customize('min_footer_copyright', function (value) {
         value.bind(function(to) {
             $('#footer_copyright').text(to);
         })
     });
 
-    wp.customize('footer_subtitle', function (value) {
+    wp.customize('min_footer_subtitle', function (value) {
         value.bind(function(to) {
             $('#footer_subtitle').text(to);
         })
     });
 
-    wp.customize('footer_custom_html', function (value) {
+    wp.customize('min_footer_custom_html', function (value) {
         value.bind(function(to) {
             $('#footer_custom_html').text(to);
         })
     });
+
+    // Cookie banner
+	wp.customize('min_cookie_banner_text', function (value) {
+		value.bind(function (to) {
+			$('#cookie-banner-text').text(to);
+		})
+	});
+
+	wp.customize('min_cookie_banner_button_text', function (value) {
+		value.bind(function (to) {
+			$('#cookie-banner-button').text(to);
+		})
+	});
+
+	wp.customize('min_cookie_banner_learn_more_text', function (value) {
+		value.bind( function (to) {
+			$('#cookie-banner-link').text(to);
+		})
+	});
+
+	wp.customize('min_cookie_banner_learn_more_link', function (value) {
+		value.bind( function (to) {
+			$('#cookie-banner-link').attr('href', to);
+		})
+	});
 
 	// Header text color.
 	wp.customize( 'header_textcolor', function( value ) {
