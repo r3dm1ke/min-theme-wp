@@ -46,17 +46,23 @@
 				'menu_id'           => 'primary-menu',
                 'container_class'   => 'primary-menu-container'
 			) );
+			$night_mode = get_theme_mod('min_night_mode_turned_on');
+			$search_form = get_theme_mod('min_search_widget_turned_on');
+			if ($night_mode == '1' || $search_form == '1') {
 			?>
             <div class="permanent-menu-container">
                 <ul id="permanent-menu" class="menu">
+                    <?php if ($night_mode == '1') { ?>
                     <li id="menu-item-9" class="night_mode_toggle menu-item menu-item-type-custom menu-item-object-custom">
                         <a href="#" data-glitch="night mode" class="glitch">night mode</a>
-                    </li>
+                    </li> <?php }
+                    if ($search_form == '1') { ?>
                     <li id="menu-item-10" class="search-trigger menu-item menu-item-type-custom menu-item-object-custom">
                         <a href="#" data-glitch="search" class="glitch">search</a>
-                    </li>
+                    </li> <?php } ?>
                 </ul>
             </div>
+            <?php } ?>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
 

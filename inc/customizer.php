@@ -176,6 +176,38 @@ function min_customize_register( $wp_customize ) {
 		'section'   => 'min_cookie_banner_customizer',
 		'settings'  => 'min_cookie_banner_learn_more_link',
 	)));
+
+	// ========= Night mode & search in navbar ==========
+	$wp_customize->add_section('min_navbar_extras', array(
+		'title'     => __('Night mode and search in  navbar', 'min'),
+		'priority'  => 50
+	));
+
+	$wp_customize->add_setting('min_night_mode_turned_on', array(
+		'default'           => '',
+		'transport'         => 'refresh',
+		'sanitize_callback' => 'wp_filter_nohtml_kses'
+	));
+
+	$wp_customize->add_setting('min_search_widget_turned_on', array(
+		'default'           => '',
+		'transport'         => 'refresh',
+		'sanitize_callback' => 'wp_filter_nohtml_kses'
+	));
+
+	$wp_customize->add_control(new WP_Customize_Control($wp_customize, 'min_night_mode_turned_on', array(
+		'label'     => __('Turn on night mode toggle in navbar', 'min'),
+		'section'   => 'min_navbar_extras',
+		'settings'  => 'min_night_mode_turned_on',
+		'type'      => 'checkbox'
+	)));
+
+	$wp_customize->add_control(new WP_Customize_Control($wp_customize, 'min_search_widget_turned_on', array(
+		'label'     => __('Turn on search widget in navbar', 'min'),
+		'section'   => 'min_navbar_extras',
+		'settings'  => 'min_search_widget_turned_on',
+		'type'      => 'checkbox'
+	)));
 }
 add_action( 'customize_register', 'min_customize_register' );
 
