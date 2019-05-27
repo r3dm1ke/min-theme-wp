@@ -315,3 +315,7 @@ function min_site_block_editor_styles() {
 }
 add_action( 'enqueue_block_editor_assets', 'min_site_block_editor_styles' );
 
+function min_theme_add_editor_styles() {
+	add_editor_style( 'editor.css' );
+}
+add_action( 'admin_init', 'min_theme_add_editor_styles' );
