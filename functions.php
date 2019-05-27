@@ -67,8 +67,8 @@ if ( ! function_exists( 'min_setup' ) ) :
 						<span class="screen-reader-text"><?php _e('Search for:', 'min') ?></span>
 						<input type="search" class="search-field" placeholder="Search ..." value="" name="s" wtx-context="7CAD94C8-71F2-4A93-8B2A-390F32FA3256">
 					</label>
-					<a class="search-submit glitch" tabindex='0' onclick="form.submit()">search</a>
-					<a class="search-hide glitch" tabindex='0' id="search-hide-trigger">hide</a>
+					<a class="search-submit glitch" tabindex='0' onclick="form.submit()"><?php _e('search', 'min'); ?></a>
+					<a class="search-hide glitch" tabindex='0' id="search-hide-trigger"><?php _e('hide', 'min'); ?></a>
 				</form>
 				<?php
 			}
@@ -151,19 +151,6 @@ function min_widgets_init() {
 	) );
 }
 add_action( 'widgets_init', 'min_widgets_init' );
-
-/**
- * Optimize scripts
- */
-/*add_filter( 'clean_url', function( $url )
-{
-	if ( FALSE === strpos( $url, '.js' ) )
-	{ // not our file
-		return $url;
-	}
-	// Must be a ', not "!
-	return "$url' defer='defer";
-}, 11, 1 );*/
 
 /**
  * Enqueue scripts and styles.
