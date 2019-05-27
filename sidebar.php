@@ -10,9 +10,9 @@
 if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 	return;
 }
-add_action( 'dynamic_sidebar_before', 'widget_title_h2_h3' );
+add_action( 'dynamic_sidebar_before', 'min_widget_title_h2_h3' );
 
-function widget_title_h2_h3( $sidebar_id ) {
+function min_widget_title_h2_h3( $sidebar_id ) {
 	global $wp_registered_sidebars;
 	if ( isset( $wp_registered_sidebars[$sidebar_id] ) ) {
 		if ( isset($wp_registered_sidebars[$sidebar_id]['before_title']) ) {

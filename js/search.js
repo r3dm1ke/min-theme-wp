@@ -7,7 +7,6 @@
         const permanent_menu_container = document.querySelector('.permanent-menu-container')
 
         const toggle_search = function() {
-            console.log('tock');
             menu_container.classList.toggle('hidden');
             search_container.classList.toggle('hidden');
             permanent_menu_container.classList.toggle('hidden');

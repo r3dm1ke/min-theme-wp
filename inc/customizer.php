@@ -141,7 +141,7 @@ function min_customize_register( $wp_customize ) {
 	));
 
 	$wp_customize->add_setting('min_cookie_banner_learn_more_link', array(
-		'default'           => 'https://www.cookiesandyou.com/',
+		'default'           => __('https://www.cookiesandyou.com/', 'min'),
 		'transport'         => 'postMessage',
 		'sanitize_callback' => 'esc_url'
 	));

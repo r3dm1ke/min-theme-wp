@@ -25,12 +25,12 @@ if (!function_exists('min_get_glitch_stylesheet')) {
 				}
 
 				.glitch:after {
-					color: <?php echo get_theme_mod('min_glitch_color_2'); ?>;
+					color: <?php echo esc_html(get_theme_mod('min_glitch_color_2')); ?>;
 					z-index: -2;
 				}
 
 				.glitch:before {
-					color: <?php echo get_theme_mod('min_glitch_color_1'); ?>;
+					color: <?php echo esc_html(get_theme_mod('min_glitch_color_1')); ?>;
 					z-index: -1;
 				}
 

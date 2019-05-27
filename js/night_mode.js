@@ -17,11 +17,7 @@
         const toggle = document.querySelector('.night_mode_toggle');
         toggle.onclick = function () {
             if (allowed === 0) {
-                if (confirm('Enabling night mode means a cookie will be stored to make night mode persistent. It will ' +
-                    'be a 0 or a 1, meaning night mode is off and on, respectively. That is the only piece of info stored. ' +
-                    'Do you wish to proceed?')) {
-                    allowed = 1;
-                } else return;
+                allowed = 1;
             }
             if (is_night_mode === 1) {
                 is_night_mode = 0;

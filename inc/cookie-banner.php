@@ -10,10 +10,10 @@ if (!function_exists('min_setup_cookie_banner')) {
 	        $read_more_text = get_theme_mod('min_cookie_banner_learn_more_text');
 	        ?>
             <div id="cookie-banner" class="hidden">
-                <p><span id="cookie-banner-text"><?php echo $text ?></span>
-                    <a id='cookie-banner-link' href="<?php echo $read_more_link ?>"><?php echo $read_more_text ?></a>
+                <p><span id="cookie-banner-text"><?php echo esc_html($text) ?></span>
+                    <a id='cookie-banner-link' href="<?php echo esc_attr($read_more_link) ?>"><?php echo esc_html($read_more_text) ?></a>
                 </p>
-                <button id="cookie-banner-button"><?php echo $button_text ?></button>
+                <button id="cookie-banner-button"><?php echo esc_html($button_text) ?></button>
             </div>
             <script>
                 document.addEventListener("DOMContentLoaded", function() {

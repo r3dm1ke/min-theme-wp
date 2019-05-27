@@ -54,11 +54,11 @@
                 <ul id="permanent-menu" class="menu">
                     <?php if ($night_mode == '1') { ?>
                     <li id="menu-item-9" class="night_mode_toggle menu-item menu-item-type-custom menu-item-object-custom">
-                        <a href="#" data-glitch="night mode" class="glitch">night mode</a>
+                        <a href="#" data-glitch="night mode" class="glitch"><?php _e('night mode', 'min') ?></a>
                     </li> <?php }
                     if ($search_form == '1') { ?>
                     <li id="menu-item-10" class="search-trigger menu-item menu-item-type-custom menu-item-object-custom">
-                        <a href="#" data-glitch="search" class="glitch">search</a>
+                        <a href="#" data-glitch="search" class="glitch"><?php _e('search', 'min') ?></a>
                     </li> <?php } ?>
                 </ul>
             </div>
