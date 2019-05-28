@@ -1,5 +1,5 @@
 # min - a minimalist, multipurpose theme for wordpress
-### installation
+### Installation
 - Copy the directory containing the files into %wp install directory%/wp-content/themes
 - _OR_ Archive it in a zip file and upload in wordpress admin console
 
