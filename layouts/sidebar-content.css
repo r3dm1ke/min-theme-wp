@@ -6,29 +6,46 @@
  * Learn more: https://developer.wordpress.org/themes/basics/template-files/
 */
 
-.content-area {
-	float: right;
-	margin: 0 0 0 -25%;
-	width: 100%;
-}
-.site-main {
-	margin: 0 0 0 25%;
-}
-.site-content .widget-area {
-	float: left;
-	overflow: hidden;
-	width: 25%;
-}
-.site-footer {
-	clear: both;
-	width: 100%;
+#page {
+	display: flex;
+	min-height: calc(100vh - 2rem);
+	flex-direction: column;
 }
 
-.no-sidebar .content-area {
-	float: none;
-	margin-left: auto;
-	margin-right: auto;
+#content, #primary {
+	flex-grow: 1;
 }
-.no-sidebar .site-main {
-	margin-right: 0;
+
+#primary {
+	max-width: 44rem;
 }
+
+#primary.primary-nosidebar {
+	max-width: 64rem;
+}
+
+.site-content {
+	display: flex;
+	flex-direction: column;
+}
+
+@media screen and (min-width: 42.5rem){
+	.site-content {
+		display: flex;
+		flex-direction: row;
+	}
+	.site-content .widget-area {
+		min-width: 12.5rem;
+		max-width: 20rem;
+		margin-right: 3.125rem;
+		max-height: 31rem;
+		order: 1;
+	}
+
+	.site-content .content-area {
+		order: 2;
+	}
+}
+
+
+

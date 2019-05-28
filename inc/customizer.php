@@ -208,6 +208,29 @@ function min_customize_register( $wp_customize ) {
 		'settings'  => 'min_search_widget_turned_on',
 		'type'      => 'checkbox'
 	)));
+
+	// ====== LAYOUT ======
+	$wp_customize->add_section('min_layout_customizer', array(
+		'title'     => __('Global Layout Settings', 'min'),
+		'priority'  => '30'
+	));
+
+	$wp_customize->add_setting('min_layout_type', array(
+		'default'           => 'content-sidebar',
+		'transport'         => 'refresh',
+		'sanitize_callback' => 'wp_filter_nohtml_kses'
+	));
+
+	$wp_customize->add_control(new WP_Customize_Control($wp_customize, 'min_layout_type', array(
+		'label'     => __('Layout type'),
+		'section'   => 'min_layout_customizer',
+		'settings'  => 'min_layout_type',
+		'type'      => 'radio',
+		'choices'   => array(
+			'content-sidebar'   => __('Content - Sidebar', 'min'),
+			'sidebar-content'   => __('Sidebar - Content', 'min')
+		)
+	)));
 }
 add_action( 'customize_register', 'min_customize_register' );
 
