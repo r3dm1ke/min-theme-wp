@@ -62,13 +62,13 @@ if ( ! function_exists( 'min_setup' ) ) :
 		if (!function_exists('searchform_hideable')) {
 			function searchform_hideable() {
 				?>
-				<form aria-hidden="true" role="search" method="get" class="search-form hidden" action="<?php echo home_url( '/' ); ?>" wtx-context="46BAD25B-5711-4970-AF68-E68D30F901A1" name="form">
+				<form aria-hidden="true" role="search" method="get" class="search-form hidden" action="<?php echo esc_attr(home_url( '/' )); ?>" name="form">
 					<label>
-						<span class="screen-reader-text"><?php _e('Search for:', 'min') ?></span>
-						<input type="search" class="search-field" placeholder="Search ..." value="" name="s" wtx-context="7CAD94C8-71F2-4A93-8B2A-390F32FA3256">
+						<span class="screen-reader-text"><?php esc_html_e('Search for:', 'min') ?></span>
+						<input type="search" class="search-field" placeholder="Search ..." value="" name="s">
 					</label>
-					<a class="search-submit glitch" tabindex='0' onclick="form.submit()"><?php _e('search', 'min'); ?></a>
-					<a class="search-hide glitch" tabindex='0' id="search-hide-trigger"><?php _e('hide', 'min'); ?></a>
+					<a class="search-submit glitch" tabindex='0' onclick="form.submit()"><?php esc_html_e('search', 'min'); ?></a>
+					<a class="search-hide glitch" tabindex='0' id="search-hide-trigger"><?php esc_html_e('hide', 'min'); ?></a>
 				</form>
 				<?php
 			}

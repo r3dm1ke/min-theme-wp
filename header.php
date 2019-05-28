@@ -33,7 +33,7 @@
 			$min_description = get_bloginfo( 'description', 'display' );
 			if ( $min_description || is_customize_preview() ) :
 				?>
-				<p class="site-description"><?php echo $min_description; /* WPCS: xss ok. */ ?></p>
+				<p class="site-description"><?php echo esc_html($min_description); /* WPCS: xss ok. */ ?></p>
 			<?php endif; ?>
 		</div><!-- .site-branding -->
 
@@ -46,19 +46,19 @@
 				'menu_id'           => 'primary-menu',
                 'container_class'   => 'primary-menu-container'
 			) );
-			$night_mode = get_theme_mod('min_night_mode_turned_on');
-			$search_form = get_theme_mod('min_search_widget_turned_on');
-			if ($night_mode == '1' || $search_form == '1') {
+			$min_night_mode = get_theme_mod('min_night_mode_turned_on');
+			$min_search_form = get_theme_mod('min_search_widget_turned_on');
+			if ($min_night_mode == '1' || $min_search_form == '1') {
 			?>
             <div class="permanent-menu-container">
                 <ul id="permanent-menu" class="menu">
-                    <?php if ($night_mode == '1') { ?>
+                    <?php if ($min_night_mode == '1') { ?>
                     <li id="menu-item-9" class="night_mode_toggle menu-item menu-item-type-custom menu-item-object-custom">
-                        <a href="#" data-glitch="night mode" class="glitch"><?php _e('night mode', 'min') ?></a>
+                        <a href="#" data-glitch="night mode" class="glitch"><?php esc_html_e('night mode', 'min') ?></a>
                     </li> <?php }
-                    if ($search_form == '1') { ?>
+                    if ($min_search_form == '1') { ?>
                     <li id="menu-item-10" class="search-trigger menu-item menu-item-type-custom menu-item-object-custom">
-                        <a href="#" data-glitch="search" class="glitch"><?php _e('search', 'min') ?></a>
+                        <a href="#" data-glitch="search" class="glitch"><?php esc_html_e('search', 'min') ?></a>
                     </li> <?php } ?>
                 </ul>
             </div>

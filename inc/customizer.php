@@ -222,7 +222,7 @@ function min_customize_register( $wp_customize ) {
 	));
 
 	$wp_customize->add_control(new WP_Customize_Control($wp_customize, 'min_layout_type', array(
-		'label'     => __('Layout type'),
+		'label'     => __('Layout type', 'min'),
 		'section'   => 'min_layout_customizer',
 		'settings'  => 'min_layout_type',
 		'type'      => 'radio',

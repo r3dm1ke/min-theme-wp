@@ -33,5 +33,3 @@ if (!function_exists('min_display_comment_form')) {
 		comment_form($comment_args);
 	}
 }
-
-?>

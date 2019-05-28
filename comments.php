@@ -16,6 +16,7 @@
  * return early without loading the comments.
  */
 require get_template_directory().'/comment-form.php';
+
 if ( post_password_required() ) {
 	return;
 }
@@ -26,27 +27,27 @@ if ( post_password_required() ) {
 	<?php
 	// You can start editing here -- including this comment!
 	if ( have_comments() ) :
-        function format_comment($comment, $args, $depth) {
+        function min_format_comment($comment, $args, $depth) {
 
-        $GLOBALS['comment'] = $comment; ?>
+            $GLOBALS['comment'] = $comment; ?>
 
-        <li <?php comment_class(); ?> id="li-comment-<?php comment_ID() ?>">
+            <li <?php comment_class(); ?> id="li-comment-<?php comment_ID() ?>">
 
-            <div class="comment-intro">
-                <?php printf(__('%s', 'min'), strtolower(get_comment_author_link())) ?>
-                <it> | </it>
-                <a class="comment-permalink" href="<?php echo htmlspecialchars ( get_comment_link( $comment->comment_ID ) ) ?>"><?php printf(__('%1$s', 'min'), strtolower(get_comment_date()), strtolower(get_comment_time())) ?></a>
-            </div>
+                <div class="comment-intro">
+                    <?php printf(__('%s', 'min'), strtolower(get_comment_author_link())) ?>
+                    <it> | </it>
+                    <a class="comment-permalink" href="<?php echo htmlspecialchars ( get_comment_link( $comment->comment_ID ) ) ?>"><?php printf(__('%1$s', 'min'), strtolower(get_comment_date()), strtolower(get_comment_time())) ?></a>
+                </div>
 
-            <?php if ($comment->comment_approved == '0') : ?>
-                <em><php _e('Your comment is awaiting moderation.') ?></em><br />
-            <?php endif; ?>
+                <?php if ($comment->comment_approved == '0') : ?>
+                    <em><php _e('Your comment is awaiting moderation.') ?></em><br />
+                <?php endif; ?>
 
-            <?php comment_text(); ?>
+                <?php comment_text(); ?>
 
-            <div class="reply">
-                <?php comment_reply_link(array_merge( $args, array('depth' => $depth, 'max_depth' => $args['max_depth']))) ?>
-            </div>
+                <div class="reply">
+                    <?php comment_reply_link(array_merge( $args, array('depth' => $depth, 'max_depth' => $args['max_depth']))) ?>
+                </div>
 
             <?php }
 		?>
@@ -71,7 +72,7 @@ if ( post_password_required() ) {
             </h3><!-- .comments-title -->
             <ol class="comment-list">
 		        <?php
-		        wp_list_comments('type=comment&callback=format_comment');
+		        wp_list_comments('type=comment&callback=min_format_comment');
 		        ?>
             </ol><!-- .comment-list -->
         </div>

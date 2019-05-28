@@ -19,8 +19,8 @@ get_header();
 				</header><!-- .page-header -->
 
 				<div class="page-content">
-					<p class="error-404-subtitle"><?php _e( 'someone possibly made a typo in the link', 'min' ); ?><br>
-                    <?php _e('try searching or go to ', 'min'); ?><a href="<?php echo get_home_url() ?>">home page</a></p>
+					<p class="error-404-subtitle"><?php esc_html_e( 'someone possibly made a typo in the link', 'min' ); ?><br>
+                    <?php esc_html_e('try searching or go to ', 'min'); ?><a href="<?php echo esc_attr(get_home_url()) ?>">home page</a></p>
 				</div><!-- .page-content -->
 			</section><!-- .error-404 -->
 
