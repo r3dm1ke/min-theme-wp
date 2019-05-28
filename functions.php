@@ -94,6 +94,14 @@ if ( ! function_exists( 'min_setup' ) ) :
 			'flex-width'  => true,
 			'flex-height' => true,
 		) );
+
+		$header_info = array(
+			'width'         => 1024,
+			'height'        => 96,
+			'flex-width'         => true,
+			'flex-height'        => true,
+		);
+		add_theme_support( 'custom-header', $header_info );
 	}
 endif;
 add_action( 'after_setup_theme', 'min_setup' );

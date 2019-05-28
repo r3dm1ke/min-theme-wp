@@ -8,7 +8,7 @@ Version: 1.1.0
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
 Text Domain: min
-Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready, editor-style, blog, e-commerce, portfolio, two-columns, right-sidebar, accessibility-ready, full-width-template, sticky-post, theme-options, block-styles, wide-blocks
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready, editor-style, blog, e-commerce, portfolio, two-columns, right-sidebar, accessibility-ready, full-width-template, sticky-post, theme-options, block-styles, wide-blocks, custom-header
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
@@ -27,6 +27,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 # Elements
 # Forms
 	## Comment forms
+# Custom header
 # Navigation
 	## Links
 	## Menus
@@ -778,6 +779,13 @@ textarea {
 }
 
 /*--------------------------------------------------------------
+# Custom header
+--------------------------------------------------------------*/
+#header-image {
+	margin-top: 2rem;
+}
+
+/*--------------------------------------------------------------
 # Comment forms
 --------------------------------------------------------------*/
 
@@ -961,13 +969,15 @@ h6 a {
 --------------------------------------------------------------*/
 #masthead {
 	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
 	flex-direction: column;
 	padding-top: 1rem;
 	margin-bottom: 1rem;
 }
 
 .site-branding {
-	flex-grow: 1;
+	flex-grow: 0;
 	min-width: 19rem;
 	display: flex;
 	flex-direction: column;
@@ -989,7 +999,7 @@ h6 a {
 }
 
 #site-navigation {
-	flex-grow: 1;
+	flex-grow: 0;
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-end;
@@ -1050,6 +1060,14 @@ nav#site-navigation div {
 	#primary-menu > ul
 	{
 		justify-content: flex-end;
+	}
+
+	#site-navigation {
+		max-width: 50%;
+	}
+
+	.site-branding {
+		max-width: 40%;
 	}
 }
 
@@ -1173,8 +1191,6 @@ nav#site-navigation div {
 .entry-content:after,
 .comment-content:before,
 .comment-content:after,
-.site-header:before,
-.site-header:after,
 .site-content:before,
 .site-content:after,
 .site-footer:before,
