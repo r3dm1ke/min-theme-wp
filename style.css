@@ -1604,8 +1604,23 @@ body.night_mode {
 	background-color: #000;
 }
 
-body.night_mode img, body.night_mode .has-background-dim {
+body.night_mode img,
+body.night_mode .has-background-dim,
+body.night_mode .wp-block-embed{
 	filter: invert(1);
+}
+ /* For IOS & macOS */
+@media screen and prefers-dark-interface {
+	body.night_mode {
+		filter: invert(1);
+		background-color: #000;
+	}
+
+	body.night_mode img,
+	body.night_mode .has-background-dim,
+	body.night_mode .wp-block-embed{
+		filter: invert(1);
+	}
 }
 
 /*--------------------------------------------------------------
