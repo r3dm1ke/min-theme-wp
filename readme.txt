@@ -20,5 +20,10 @@ given I have time, or you can add it yourself and submit a pull request, this is
 
 == Changelog ==
 
+= 1.2 =
+* Night mode is now working natively and automatically with IOS system-wide night mode
+* Archive titles are now centered only in layouts with no sidebar
+
+
 = 1.0 =
 * Initial release
