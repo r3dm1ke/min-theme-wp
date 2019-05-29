@@ -1314,8 +1314,11 @@ nav#site-navigation div {
 	display: none;
 }
 
-.page-title {
+.nosidebar .page-title {
 	text-align: center;
+}
+
+.page-title {
 	font-size: 1.7rem;
 	margin-top: 3rem;
 }

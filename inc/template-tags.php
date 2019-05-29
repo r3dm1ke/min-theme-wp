@@ -30,7 +30,7 @@ if ( ! function_exists( 'min_posted_on' ) ) :
 			'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
 		);
 
-		echo '<span class="posted-on">' . esc_html($posted_on) . '</span>'; // WPCS: XSS OK.
+		echo '<span class="posted-on">' . $posted_on . '</span>'; // WPCS: XSS OK.
 
 	}
 endif;
@@ -46,7 +46,7 @@ if ( ! function_exists( 'min_posted_by' ) ) :
 			'<span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>'
 		));
 
-		echo '<span class="byline"> ' . esc_html($byline) . '</span>'; // WPCS: XSS OK.
+		echo '<span class="byline"> ' . $byline . '</span>'; // WPCS: XSS OK.
 
 	}
 endif;
@@ -57,7 +57,7 @@ if ( ! function_exists( 'min_tags_list' ) ) :
 	 */
 	function min_tags_list() {
 		$tagline = strtolower(get_the_tag_list('<span class="tags-meta"> | tags: ',', ','</span>'));
-		echo esc_html($tagline);
+		echo $tagline;
 
 	}
 endif;
