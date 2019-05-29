@@ -23,6 +23,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
 # Normalize
+# Smooth Scrolling
 # Typography
 # Elements
 # Forms
@@ -393,6 +394,13 @@ template {
 
 [hidden] {
 	display: none;
+}
+
+/*--------------------------------------------------------------
+# Smooth scrolling
+--------------------------------------------------------------*/
+body {
+	scroll-behavior: smooth;
 }
 
 /*--------------------------------------------------------------
