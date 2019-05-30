@@ -23,7 +23,8 @@ given I have time, or you can add it yourself and submit a pull request, this is
 = 1.2 =
 * Night mode is now working natively and automatically with IOS system-wide night mode
 * Archive titles are now centered only in layouts with no sidebar
-
+* Added GDPR compliant banner, settings for it are in the customizer
+* Added after_body action call as of Wordpress 5.2
 
 = 1.0 =
 * Initial release
