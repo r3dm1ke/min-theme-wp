@@ -25,6 +25,7 @@ given I have time, or you can add it yourself and submit a pull request, this is
 * Archive titles are now centered only in layouts with no sidebar
 * Added GDPR compliant banner, settings for it are in the customizer
 * Added after_body action call as of Wordpress 5.2
+* Fixed incorrect HTML escaping in byline
 
 = 1.0 =
 * Initial release
