@@ -801,6 +801,14 @@ textarea {
 	display: none;
 }
 
+.comment-form label[for='wp-comment-cookies-consent'] {
+	display: initial;
+}
+
+.comment-form-cookies-consent {
+	margin-bottom: 1rem;
+}
+
 .comment-form {
 	display: flex;
 	flex-direction: column;
