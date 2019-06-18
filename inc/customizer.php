@@ -50,17 +50,17 @@ function min_customize_register( $wp_customize ) {
 	) );
 
 	// Footer controls
-	$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'min_footer_copyright_control', array(
+	$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'min_footer_copyright', array(
 		'label'      => __( 'Copyright line', 'min' ),
 		'section'    => 'min_footer_customizer',
 		'settings'   => 'min_footer_copyright',
 	) ) );
-	$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'min_footer_subtitle_control', array(
+	$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'min_footer_subtitle', array(
 		'label'      => __( 'Subtitle line', 'min' ),
 		'section'    => 'min_footer_customizer',
 		'settings'   => 'min_footer_subtitle',
 	) ) );
-	$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'min_footer_customhtml_control', array(
+	$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'min_footer_customhtml', array(
 		'label'      => __( 'Last link (custom HTML supported, but won\'t show in customizer window)', 'min' ),
 		'section'    => 'min_footer_customizer',
 		'settings'   => 'min_footer_custom_html',

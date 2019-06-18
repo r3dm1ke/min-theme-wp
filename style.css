@@ -805,7 +805,7 @@ textarea {
 	display: initial;
 }
 
-.comment-form-cookies-consent {
+.comment-form p.comment-form-cookies-consent {
 	margin-bottom: 1rem;
 }
 
