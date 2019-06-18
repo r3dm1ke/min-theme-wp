@@ -60,7 +60,7 @@ function min_customize_register( $wp_customize ) {
 		'section'    => 'min_footer_customizer',
 		'settings'   => 'min_footer_subtitle',
 	) ) );
-	$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'min_footer_customhtml', array(
+	$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'min_footer_custom_html', array(
 		'label'      => __( 'Last link (custom HTML supported, but won\'t show in customizer window)', 'min' ),
 		'section'    => 'min_footer_customizer',
 		'settings'   => 'min_footer_custom_html',

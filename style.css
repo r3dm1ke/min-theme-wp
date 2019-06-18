@@ -803,6 +803,7 @@ textarea {
 
 .comment-form label[for='wp-comment-cookies-consent'] {
 	display: initial;
+	margin-left: .5rem;
 }
 
 .comment-form p.comment-form-cookies-consent {
