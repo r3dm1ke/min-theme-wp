@@ -1,5 +1,7 @@
 # min - a minimalist, multipurpose theme for wordpress
 
+![](src/screenshot.png)
+
 ### Why
 I have created this theme to practice my web development skills and gain experience in web development.
 This theme is used in production [on my blog](https://everyday.codes).
