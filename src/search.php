@@ -31,7 +31,7 @@ get_header();
 
 				/**
 				 * Run the loop for the search to output the results.
-				 * If you want to overload this in a child theme then include a file
+				 * If you want to overload this in a child src then include a file
 				 * called content-search.php and that will be used instead.
 				 */
 				get_template_part( 'template-parts/content', 'search' );

@@ -9,7 +9,7 @@
 
 if ( ! function_exists( 'min_setup' ) ) :
 	/**
-	 * Sets up theme defaults and registers support for various WordPress features.
+	 * Sets up src defaults and registers support for various WordPress features.
 	 *
 	 * Note that this function is hooked into the after_setup_theme hook, which
 	 * runs before the init hook. The init hook is too late for some features, such
@@ -17,10 +17,10 @@ if ( ! function_exists( 'min_setup' ) ) :
 	 */
 	function min_setup() {
 		/*
-		 * Make theme available for translation.
+		 * Make src available for translation.
 		 * Translations can be filed in the /languages/ directory.
-		 * If you're building a theme based on min, use a find and replace
-		 * to change 'min' to the name of your theme in all the template files.
+		 * If you're building a src based on min, use a find and replace
+		 * to change 'min' to the name of your src in all the template files.
 		 */
 		load_theme_textdomain( 'min', get_template_directory() . '/languages' );
 
@@ -29,7 +29,7 @@ if ( ! function_exists( 'min_setup' ) ) :
 
 		/*
 		 * Let WordPress manage the document title.
-		 * By adding theme support, we declare that this theme does not use a
+		 * By adding src support, we declare that this src does not use a
 		 * hard-coded <title> tag in the document head, and expect WordPress to
 		 * provide it for us.
 		 */
@@ -42,7 +42,7 @@ if ( ! function_exists( 'min_setup' ) ) :
 		 */
 		add_theme_support( 'post-thumbnails' );
 
-		// This theme uses wp_nav_menu() in one location.
+		// This src uses wp_nav_menu() in one location.
 		register_nav_menus( array(
 			'menu-1' => esc_html__( 'Primary', 'min' ),
 		) );
@@ -80,7 +80,7 @@ if ( ! function_exists( 'min_setup' ) ) :
 			'default-image' => '',
 		) ) );
 
-		// Add theme support for selective refresh for widgets.
+		// Add src support for selective refresh for widgets.
 		add_theme_support( 'customize-selective-refresh-widgets' );
 
 		/**
@@ -128,7 +128,7 @@ add_action( 'after_setup_theme', 'min_add_woocommerce_support' );
 
 
 /**
- * Set the content width in pixels, based on the theme's design and stylesheet.
+ * Set the content width in pixels, based on the src's design and stylesheet.
  *
  * Priority 0 to make it available to lower priority callbacks.
  *
@@ -216,7 +216,7 @@ add_action( 'vc_before_init', 'vc_before_init_actions' );
 
 function vc_before_init_actions() {
 
-	// Setup VC to be part of a theme
+	// Setup VC to be part of a src
 	if( function_exists('vc_set_as_theme') ){
 
 		vc_set_as_theme( true );
@@ -274,12 +274,12 @@ function vc_after_init_actions() {
 }
 
 /**
- * Custom template tags for this theme.
+ * Custom template tags for this src.
  */
 require get_template_directory() . '/inc/template-tags.php';
 
 /**
- * Functions which enhance the theme by hooking into WordPress.
+ * Functions which enhance the src by hooking into WordPress.
  */
 require get_template_directory() . '/inc/template-functions.php';
 

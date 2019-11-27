@@ -1,6 +1,6 @@
 <?php
 /**
- * Custom template tags for this theme
+ * Custom template tags for this src
  *
  * Eventually, some of the functionality here could be replaced by core features.
  *
@@ -120,4 +120,12 @@ if ( ! function_exists( 'min_post_thumbnail' ) ) :
 		<?php
 		endif; // End is_singular().
 	}
+endif;
+
+if (!function_exists('min_the_excerpt_more_link')):
+    function min_the_excerpt_more_link() {
+        ?>
+        <a href="<? the_permalink(); ?>"><? _e('read more...', 'min')?></a>
+        <?
+    }
 endif;

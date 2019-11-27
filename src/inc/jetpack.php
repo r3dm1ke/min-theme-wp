@@ -15,17 +15,17 @@
  * See: https://jetpack.com/support/content-options/
  */
 function min_jetpack_setup() {
-	// Add theme support for Infinite Scroll.
+	// Add src support for Infinite Scroll.
 	add_theme_support( 'infinite-scroll', array(
 		'container' => 'main',
 		'render'    => 'min_infinite_scroll_render',
 		'footer'    => 'page',
 	) );
 
-	// Add theme support for Responsive Videos.
+	// Add src support for Responsive Videos.
 	add_theme_support( 'jetpack-responsive-videos' );
 
-	// Add theme support for Content Options.
+	// Add src support for Content Options.
 	add_theme_support( 'jetpack-content-options', array(
 		'post-details'    => array(
 			'stylesheet' => 'min-style',

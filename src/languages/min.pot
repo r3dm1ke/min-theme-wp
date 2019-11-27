@@ -277,24 +277,24 @@ msgstr ""
 msgid "read more<span class=\"screen-reader-text\"> \"%s\"</span>"
 msgstr ""
 
-#. Theme Name of the plugin/theme
+#. Theme Name of the plugin/src
 msgid "min"
 msgstr ""
 
-#. Theme URI of the plugin/theme
+#. Theme URI of the plugin/src
 msgid "http://github.com/r3dm1ke/min_theme_wp"
 msgstr ""
 
-#. Description of the plugin/theme
+#. Description of the plugin/src
 msgid ""
-"A minimalist theme for wordpress with focus for speed, privacy and "
+"A minimalist src for wordpress with focus for speed, privacy and "
 "compatibility."
 msgstr ""
 
-#. Author of the plugin/theme
+#. Author of the plugin/src
 msgid "Michael Krasnov"
 msgstr ""
 
-#. Author URI of the plugin/theme
+#. Author URI of the plugin/src
 msgid "http://github.com/r3dm1ke"
 msgstr ""
