@@ -1,0 +1,26 @@
+{
+  "name": "min_theme_wp",
+  "version": "1.0.0",
+  "description": "![](src/screenshot.png)",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp-cli": "^2.2.0"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-zip": "^5.0.1"
+  },
+  "scripts": {
+    "build": "gulp build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/r3dm1ke/min_theme_wp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/r3dm1ke/min_theme_wp/issues"
+  },
+  "homepage": "https://github.com/r3dm1ke/min_theme_wp#readme"
+}

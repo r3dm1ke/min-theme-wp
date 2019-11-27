@@ -8,11 +8,11 @@ This theme is used in production [on my blog](https://everyday.codes).
 
 ### Technology used
 - Theme framework - underscores
-- CI/CD - Docker, makefile
+- CI/CD - Docker, gulp
 
 ### Installation
-- Copy the directory containing the files into %wp install directory%/wp-content/themes
-- _OR_ Archive it in a zip file and upload in wordpress admin console
+Run `npm i`, then `npm run build`. Take `min-dist.zip` file from `/build` and install it
+using Wordpress interface.
 
 ### Development
 For development convenience, Dockerfile and docker-compose files are written. Just
