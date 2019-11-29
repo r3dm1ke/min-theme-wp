@@ -7,11 +7,19 @@
     "gulp-cli": "^2.2.0"
   },
   "devDependencies": {
+    "autoprefixer": "^9.7.2",
     "gulp": "^4.0.2",
-    "gulp-zip": "^5.0.1"
+    "gulp-clean": "^0.4.0",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-zip": "^5.0.1",
+    "node-sass": "^4.13.0"
   },
   "scripts": {
-    "build": "gulp build"
+    "build": "gulp build",
+    "watch": "gulp dev:watch"
   },
   "repository": {
     "type": "git",

@@ -1,4 +1,3 @@
-
 .idea/workspace.xml
 .idea/vcs.xml
 .idea/modules.xml
@@ -6,3 +5,6 @@
 .idea/min.iml
 .idea/deployment.xml
 .idea/webResources.xml
+node_modules
+dist
+build

@@ -7,7 +7,7 @@ services:
     environment:
       WORDPRESS_DB_PASSWORD: qwerty
     volumes:
-      - ./src:/var/www/html/wp-content/themes/min
+      - ./dist:/var/www/html/wp-content/themes/min
   mysql:
     image: "mysql:5.7"
     environment:
