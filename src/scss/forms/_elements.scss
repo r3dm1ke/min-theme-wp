@@ -1,0 +1,80 @@
+@import '../colors';
+
+$color-form-background: #ddd;
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"]
+{
+  background-color: $color-brand-light;
+  border: 1px solid $color-brand-dark;
+  color: $color-brand-dark;
+  font-size: $body_font-size;
+  line-height: 1;
+  text-transform: lowercase;
+  padding: .6em 1em .6em;
+  transition: background-color, color .2s;
+}
+
+button:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+  background-color: $color-brand-dark;
+  color: $color-brand-light;
+}
+
+button:active, button:focus,
+input[type="button"]:active,
+input[type="button"]:focus,
+input[type="reset"]:active,
+input[type="reset"]:focus,
+input[type="submit"]:active,
+input[type="submit"]:focus {
+  background-color: $color-brand-dark;
+  color: $color-brand-light;
+  outline: none;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"],
+textarea {
+  background-color: $pre_text-background;
+  border: none;
+  padding: 3px;
+  transition: background-color .3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+input[type="range"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="week"]:focus,
+input[type="time"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="color"]:focus,
+textarea:focus {
+  outline: none;
+  background-color: $color-form-background;
+}

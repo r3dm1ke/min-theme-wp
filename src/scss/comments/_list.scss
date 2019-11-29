@@ -1,0 +1,48 @@
+@import '../colors';
+
+select {
+  border: 1px solid #ccc;
+}
+
+textarea {
+  width: 100%;
+  resize: none;
+}
+
+.comments-area {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+  .comment-list {
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  .comment-intro {
+    opacity: .5;
+    font-style: italic;
+    color: $color-brand-dark;
+    a {
+      color: $color-brand-dark;
+    }
+  }
+
+  .comment-intro:hover {
+    opacity: 1;
+  }
+
+  ol {
+    list-style-type: none;
+  }
+
+  .comment {
+    p {
+      margin-bottom: .5rem;
+      margin-top: .5rem;
+    }
+    .reply {
+      margin-bottom: 1.5rem;
+    }
+  }
+}
