@@ -22,8 +22,6 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
-# Forms
-	## Comment forms
 # Custom header
 # Navigation
 	## Links
@@ -56,9 +54,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 /*--------------------------------------------------------------
 # Custom header
 --------------------------------------------------------------*/
-#header-image {
-	margin-top: 2rem;
-}
+
 
 /*--------------------------------------------------------------
 # Comment forms
