@@ -15,9 +15,10 @@ Run `npm i`, then `npm run build`. Take `min-dist.zip` file from `/build` and in
 using Wordpress interface.
 
 ### Development
-For development convenience, Dockerfile and docker-compose files are written. Just
-run `docker-compose up` in the project root and go to http://localhost:8000 . Your changes
-to the theme are propagated immediately.
+For development convenience, Dockerfile and docker-compose files are written.
+To watch for theme changes and compile it on the go, run `npm run dev`. 
+Then, start docker with `docker-compose up` in the project root and go to http://localhost:8000 . 
+Your changes to the theme are propagated immediately.
 
 ### Features
 - Fully responsive
