@@ -15,7 +15,7 @@ gulp.task('copy', function () {
 });
 
 gulp.task('clean', function () {
-    return gulp.src('./dist')
+    return gulp.src('./dist/*')
         .pipe(clean({read: false}))
 });
 
