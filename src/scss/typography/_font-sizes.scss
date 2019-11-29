@@ -1,0 +1,52 @@
+$body_font-size: 1rem;
+$body_line-height: 1.6;
+$h1_font-size: 2.5rem;
+$h2_font-size: 2.2rem;
+$h3_font-size: 1.9rem;
+$h4_font-size: 1.6rem;
+$h5_font-size: 1.3rem;
+$h6_font-size: 1.2rem;
+
+body,
+button,
+input,
+select,
+optgroup,
+textarea,
+p,
+code,
+kbd,
+tt,
+var,
+pre {
+  font-size: $body_font-size;
+  line-height: $body_line-height;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.1;
+}
+
+h1 {
+  font-size: $h1_font-size;
+}
+
+h2 {
+  font-size: $h2_font-size;
+}
+
+h3 {
+  font-size: $h3_font-size;
+}
+
+h4 {
+  font-size: $h4_font-size;
+}
+
+h5 {
+  font-size: $h5_font-size;
+}
+
+h6 {
+  font-size: $h6_font-size;
+}

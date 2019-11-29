@@ -5,7 +5,8 @@ services:
     ports:
       - "8000:80"
     environment:
-      WORDPRESS_DB_PASSWORD: qwerty
+      - WORDPRESS_DB_PASSWORD=qwerty
+      - WORDPRESS_DEBUG=1
     volumes:
       - ./dist:/var/www/html/wp-content/themes/min
   mysql:

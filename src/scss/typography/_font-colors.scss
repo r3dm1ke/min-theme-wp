@@ -1,0 +1,24 @@
+$body_text-color: #404040;
+$heading_text-color: #222;
+$pre_text-background: #eee;
+
+body,
+button,
+input,
+select,
+optgroup,
+textarea {
+  color: $body_text-color;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $heading_text-color;
+}
+
+pre, code {
+  background: $pre_text-background;
+}
+
+mark, ins {
+  background: #fff9c0;
+}

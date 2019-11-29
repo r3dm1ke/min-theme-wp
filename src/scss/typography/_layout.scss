@@ -1,0 +1,20 @@
+$base_text-margin: 1.5rem;
+
+h1, h2, h3, h4, h5, h6 {
+  display: block;
+}
+
+p {
+  margin-bottom: $base_text-margin;
+}
+
+address {
+  margin: 0 0 $base_text-margin;
+}
+
+pre {
+  margin-bottom: $base_text-margin;
+  max-width: 100%;
+  overflow: auto;
+  padding: $base_text-margin;
+}

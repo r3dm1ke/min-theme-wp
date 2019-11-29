@@ -1,0 +1,30 @@
+$body_font-family: 'Cabin', sans-serif;
+$heading_font-family: 'BioRhyme', serif;
+$code_font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+
+body,
+button,
+input,
+select,
+optgroup,
+textarea,
+p,
+dfn,
+cite,
+em,
+i {
+  font-family: $body_font-family;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+  font-family: $heading_font-family;
+}
+
+dfn, cite, em, i {
+  font-style: italic;
+}
+
+pre, code, kbd, tt, var {
+  font-family: $code_font-family;
+}

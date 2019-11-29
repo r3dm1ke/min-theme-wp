@@ -191,7 +191,7 @@ add_action( 'wp_enqueue_scripts', 'min_scripts' );
 /* Load optmized styles */
 function min_styles_to_footer() {
 	wp_enqueue_style( 'min-style', get_stylesheet_uri());
-	wp_enqueue_style('min-style-bundle', get_template_directory_url() . '/css/bundle.css');
+	wp_enqueue_style('min-style-bundle', get_template_directory_uri() . '/css/bundle.css');
 
 	if (get_theme_mod('min_layout_type') == 'sidebar-content') {
 		wp_enqueue_style( 'min-layout', get_template_directory_uri() . '/layouts/sidebar-content.css' );
