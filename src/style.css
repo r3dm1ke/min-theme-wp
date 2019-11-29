@@ -47,23 +47,6 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 --------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
-# Blocks
---------------------------------------------------------------*/
-
-@media screen and (min-width: 48.75rem) {
-	.wp-block-columns .wp-block-column {
-		margin-left: 2rem;
-		margin-right: 2rem;
-	}
-	.wp-block-columns :first-child {
-		margin-left: 0;
-	}
-
-	.wp-block-columns :last-child {
-		margin-right: 0;
-	}
-}
-/*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
 button,

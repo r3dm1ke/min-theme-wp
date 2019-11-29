@@ -1,0 +1,15 @@
+@import '../breakpoints';
+
+@media screen and (min-width: $md) {
+  .wp-block-columns .wp-block-column {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  .wp-block-columns :first-child {
+    margin-left: 0;
+  }
+
+  .wp-block-columns :last-child {
+    margin-right: 0;
+  }
+}
