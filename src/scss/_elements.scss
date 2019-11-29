@@ -1,0 +1,76 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+  box-sizing: inherit;
+}
+
+body {
+  /* Fallback for when there is no custom background color defined. */
+  background: #fff;
+}
+
+hr {
+  background-color: $pre_text-background;
+  border: 0;
+  height: 1px;
+  margin-bottom: 1.5rem;
+}
+
+ul, ol {
+  margin: 0 0 .75rem 1rem;
+  padding-left: .5rem;
+}
+
+ul {
+  list-style: none;
+
+  li::before {
+    content: "\2014\a0  ";
+  }
+}
+
+ol {
+  list-style: decimal;
+}
+
+li > ul,
+li > ol {
+  margin-bottom: 0;
+  margin-left: .5rem;
+  padding-left: .5rem;
+}
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin: 0 1.5em 1.5em;
+}
+
+img {
+  height: auto;
+  /* Make sure images are scaled correctly. */
+  max-width: 100%;
+  /* Adhere to container width. */
+}
+
+figure {
+  margin: 1em 0;
+  /* Extra wide images within figure tags don't overflow the content area. */
+}
+
+table {
+  margin: 0 0 1.5em;
+  width: 100%;
+}
+
+/* Gallery */
+li.blocks-gallery-item::before {
+  content: none;
+}
