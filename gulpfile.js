@@ -49,5 +49,5 @@ gulp.task('dev', gulp.series('clean', 'sass', 'copy', 'dev:watch'));
 gulp.task('build', gulp.series('clean', 'sass:build', 'copy'), function() {
     return gulp.src('./dist/**')
         .pipe(zip('min-dist.zip'))
-        .pipe(gulp.dest('./build'));
+        .pipe(gulp.dest('./build/dist.zip'));
 });
