@@ -18,17 +18,16 @@
 
 .site-title {
   margin: 0;
+  a {
+    color: #000;
+    font-family: "BioRhyme", serif;
+    font-style: normal;
+  }
 }
 
 .site-description {
   margin: 0 0 0 .15rem;
   opacity: 0.75;
-}
-
-.site-title a {
-  color: #000;
-  font-family: "BioRhyme", serif;
-  font-style: normal;
 }
 
 #site-navigation {
