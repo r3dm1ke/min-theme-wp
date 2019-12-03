@@ -39,12 +39,10 @@
             </div><!-- .site-branding -->
 
             <nav id="site-navigation" class="main-navigation">
-                <!--<a class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'min' ); ?></a>-->
                 <?php searchform_hideable() ?>
                 <?php
                 wp_nav_menu( array(
                     'theme_location'    => 'menu-1',
-                    'menu_id'           => 'primary-menu',
                     'container_class'   => 'primary-menu-container'
                 ) );
                 $min_night_mode = get_theme_mod('min_night_mode_turned_on');
@@ -55,11 +53,11 @@
                     <ul id="permanent-menu" class="menu">
                         <?php if ($min_night_mode == '1') { ?>
                         <li id="menu-item-9" class="night_mode_toggle menu-item menu-item-type-custom menu-item-object-custom">
-                            <a href="#" data-glitch="night mode" class="glitch"><?php esc_html_e('night mode', 'min') ?></a>
+                            <a href="#" data-glitch="<?php esc_html_e('night mode', 'min') ?>" class="glitch"><?php esc_html_e('night mode', 'min') ?></a>
                         </li> <?php }
                         if ($min_search_form == '1') { ?>
                         <li id="menu-item-10" class="search-trigger menu-item menu-item-type-custom menu-item-object-custom">
-                            <a href="#" data-glitch="search" class="glitch"><?php esc_html_e('search', 'min') ?></a>
+                            <a href="#" data-glitch="<?php esc_html_e('search', 'min') ?>" class="glitch"><?php esc_html_e('search', 'min') ?></a>
                         </li> <?php } ?>
                     </ul>
                 </div>

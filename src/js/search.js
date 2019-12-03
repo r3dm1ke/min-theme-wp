@@ -1,24 +1,36 @@
+let getSiblings = function (elem) {
+
+    // Setup siblings array and get the first sibling
+    let siblings = [];
+    let sibling = elem.parentNode.firstChild;
+
+    // Loop through each sibling and push to the array
+    while (sibling) {
+        if (sibling.nodeType === 1 && sibling !== elem) {
+            siblings.push(sibling);
+        }
+        sibling = sibling.nextSibling
+    }
+
+    return siblings;
+
+};
+
+
 (function() {
     document.addEventListener('DOMContentLoaded', function() {
         const search_trigger = document.querySelector('.search-trigger a');
-        const menu_container = document.querySelector('.primary-menu-container');
         const search_hide_trigger = document.querySelector('#search-hide-trigger');
-        const search_container = document.querySelector('.search-form');
-        const permanent_menu_container = document.querySelector('.permanent-menu-container')
+        const search_form = document.querySelector('.search-form');
+        const siblings = getSiblings(search_form);
+        siblings.push(search_form);
 
         const toggle_search = function() {
-            menu_container.classList.toggle('hidden');
-            search_container.classList.toggle('hidden');
-            permanent_menu_container.classList.toggle('hidden');
-
-            if (menu_container.classList.contains('hidden')) menu_container.setAttribute('aria-hidden', 'true');
-            else menu_container.setAttribute('aria-hidden', 'false');
-
-            if (search_container.classList.contains('hidden')) menu_container.setAttribute('aria-hidden', 'true');
-            else search_container.setAttribute('aria-hidden', 'false');
-
-            if (permanent_menu_container.classList.contains('hidden')) menu_container.setAttribute('aria-hidden', 'true');
-            else permanent_menu_container.setAttribute('aria-hidden', 'false');
+            for (let sibling of siblings) {
+                sibling.classList.toggle('hidden');
+                if (sibling.classList.contains('hidden')) sibling.setAttribute('aria-hidden', 'true');
+                else sibling.setAttribute('aria-hidden', 'false');
+            }
         };
 
         search_trigger.onclick = toggle_search;
