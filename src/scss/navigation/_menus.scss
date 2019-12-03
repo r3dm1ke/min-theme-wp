@@ -21,6 +21,7 @@
     li.focus > ul,
     li:active > ul {
       left: auto;
+      flex-direction: column;
     }
 
     ul {
