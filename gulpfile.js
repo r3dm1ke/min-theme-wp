@@ -46,8 +46,10 @@ gulp.task('dev:watch', function () {
 
 gulp.task('dev', gulp.series('clean', 'sass', 'copy', 'dev:watch'));
 
-gulp.task('build', gulp.series('clean', 'sass:build', 'copy'), function() {
-    return gulp.src('./dist/**')
+gulp.task('zip', function() {
+    return gulp.src('./dist/**/*')
         .pipe(zip('min-dist.zip'))
-        .pipe(gulp.dest('./build'));
+        .pipe(gulp.dest('./build'))
 });
+
+gulp.task('build', gulp.series('clean', 'sass:build', 'copy', 'zip'), function() {});
