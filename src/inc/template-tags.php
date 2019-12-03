@@ -125,7 +125,8 @@ endif;
 if (!function_exists('min_the_excerpt_more_link')):
     function min_the_excerpt_more_link() {
         ?>
-        <a href="<? the_permalink(); ?>"><? _e('read more...', 'min')?></a>
-        <?
+        <a href="<?php the_permalink(); ?>"><?php _e('read more...', 'min')?></a>
+        <?php
     }
 endif;
+?>
