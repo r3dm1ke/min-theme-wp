@@ -1,0 +1,19 @@
+.widget {
+  margin: 0 0 1.5em;
+  /* Make sure select elements fit in widgets. */
+  display: flex;
+  flex-direction: column;
+
+  select {
+    max-width: 100%;
+  }
+
+  div {
+    padding-top: .5rem;
+  }
+
+  ul {
+    margin-left: 0;
+  }
+
+}

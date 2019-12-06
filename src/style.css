@@ -38,47 +38,10 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 /*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/
-.widget {
-	margin: 0 0 1.5em;
-	/* Make sure select elements fit in widgets. */
-	display: flex;
-	flex-direction: column;
-}
 
-.widget select {
-	max-width: 100%;
-}
-
-.widget > div {
-	padding-top: .5rem;
-}
-
-.widget ul {
-	margin-left: 0;
-}
 
 /* Search widget */
-.widget .search-field {
-	width: 100%;
-	background: none;
-	border-bottom: 1px solid #aaa;
-	text-transform: lowercase;
-}
 
-.widget .search-field:hover,
-.widget .search-field:active,
-.widget .search-field:focus {
-	background: none;
-	border-bottom: 1px solid #000;
-}
-
-.widget .search-submit {
-	display: none;
-}
-
-.wp-block-latest-posts li::before {
-	content: none;
-}
 
 /*--------------------------------------------------------------
 # Content

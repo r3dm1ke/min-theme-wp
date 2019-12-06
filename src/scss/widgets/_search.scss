@@ -1,0 +1,19 @@
+.widget {
+  .search-field {
+    width: 100%;
+    background: none;
+    border-bottom: 1px solid #aaa;
+    text-transform: lowercase;
+
+    &:hover,
+    &:active,
+    &:focus {
+      background: none;
+      border-bottom: 1px solid #000;
+    }
+  }
+
+  .search-submit {
+    display: none;
+  }
+}
