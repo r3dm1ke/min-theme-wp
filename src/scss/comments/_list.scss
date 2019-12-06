@@ -46,3 +46,23 @@ textarea {
     }
   }
 }
+
+.comment-content a {
+  word-wrap: break-word;
+}
+
+.bypostauthor {
+  display: block;
+}
+
+#reply-title,  .comments-title {
+  margin-bottom: 1.9rem;
+}
+
+#cancel-comment-reply-link {
+  color: #8080FF;
+}
+
+.comment-list ul li::before {
+  content: '';
+}

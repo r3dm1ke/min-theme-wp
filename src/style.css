@@ -20,11 +20,6 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
-# Content
-	## Posts and pages
-	## Post navigation
-	## Archives
-	## Comments
 	## Tables
 # Infinite scroll
 # Media
@@ -33,37 +28,6 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 # Woocommerce
 # Cookie Banner
 --------------------------------------------------------------*/
-
-/* TODO put somewhere */
-
-
-/*--------------------------------------------------------------
-## Post navigation
---------------------------------------------------------------*/
-
-
-/*--------------------------------------------------------------
-## Comments
---------------------------------------------------------------*/
-.comment-content a {
-	word-wrap: break-word;
-}
-
-.bypostauthor {
-	display: block;
-}
-
-#reply-title,  .comments-title {
-	margin-bottom: 1.9rem;
-}
-
-#cancel-comment-reply-link {
-	color: #8080FF;
-}
-
-.comment-list ul li::before {
-	content: '';
-}
 
 /*--------------------------------------------------------------
 # Tables
