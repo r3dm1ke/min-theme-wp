@@ -1,0 +1,85 @@
+.woocommerce span.onsale {
+  border-radius: 0;
+  background-color: #000;
+  color: #fff;
+  text-transform: lowercase;
+}
+
+.woocommerce div.product p.price,
+.woocommerce div.product span.price {
+  color: #000;
+}
+
+.woocommerce div.product form.cart .button {
+  background: none;
+  color: #000;
+  border: 1px solid black;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+
+.woocommerce div.product form.cart .button:hover,
+.woocommerce div.product form.cart .button:active,
+.woocommerce div.product form.cart .button:focus {
+  background-color: #000;
+  color: #fff;
+}
+
+.woocommerce .woocommerce-tabs ul.wc-tabs li.active {
+  color: #fff !important;
+  background-color: #000 !important;
+}
+
+.woocommerce .woocommerce-tabs ul.wc-tabs li {
+  margin-left: 1rem !important;
+  background: none !important;
+  color: black !important;
+  border: 1px solid black !important;
+  border-radius: 0 !important;
+  text-transform: lowercase;
+}
+
+.woocommerce div.product .woocommerce-tabs ul.tabs {
+  padding-left: 0;
+}
+
+.woocommerce #respond input#submit,
+.woocommerce a.button,
+.woocommerce button.button,
+.woocommerce input.button,
+#add_payment_method .wc-proceed-to-checkout a.checkout-button,
+.woocommerce-cart .wc-proceed-to-checkout a.checkout-button,
+.woocommerce-checkout .wc-proceed-to-checkout a.checkout-button{
+  background: none;
+  color: #000;
+  border: 1px solid black;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+
+.woocommerce #respond input#submit:hover,
+.woocommerce a.button:hover,
+.woocommerce button.button:hover,
+.woocommerce input.button:hover,
+.woocommerce #respond input#submit.alt:hover,
+.woocommerce a.button.alt:hover,
+.woocommerce button.button.alt:hover,
+.woocommerce input.button.alt:hover{
+  background-color: black;
+  color: white;
+}
+
+.woocommerce .woocommerce-tabs #tab-description {
+  text-transform: lowercase;
+}
+
+.woocommerce .woocommerce-tabs ul.wc-tabs li:first-child {
+  margin-left: 0 !important;
+}
+
+.woocommerce .woocommerce-tabs ul.wc-tabs li:before,
+.woocommerce .woocommerce-tabs ul.wc-tabs li:after {
+  display: none !important;
+}
