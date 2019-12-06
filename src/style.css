@@ -34,26 +34,7 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 # Cookie Banner
 --------------------------------------------------------------*/
 
-/* Footer */
-.site-info {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-}
-.site-info span {
-	text-align: center;
-	color: #000;
-	font-style: italic;
-}
-
-.site-info span a {
-	color: #000;
-}
-
-#colophon {
-	margin-top: 4rem;
-}
-
+/* TODO put somewhere */
 .entry-content pre {
 	max-width: 45rem;
 }

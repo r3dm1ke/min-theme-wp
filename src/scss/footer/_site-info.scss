@@ -1,0 +1,15 @@
+@import '../colors';
+
+.site-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  span {
+    text-align: center;
+    color: $color-brand-dark;
+    font-style: italic;
+  }
+  span a {
+    color: $color-brand-dark;
+  }
+}
