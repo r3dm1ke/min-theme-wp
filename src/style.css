@@ -49,38 +49,7 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 --------------------------------------------------------------*/
 
 /* Night Mode */
-body.night_mode {
-	filter: invert(1);
-	background-color: #000;
-}
 
-body.night_mode img,
-body.night_mode .has-background-dim,
-body.night_mode .wp-block-embed{
-	filter: invert(1);
-}
-
-body {
-	transition: filter .4s;
-}
-
-img, .has-background-dim, .wp-block-embed {
-	transition: filter .4s;
-}
- /* For IOS & macOS */
-@media screen and prefers-dark-interface {
-	body.night_mode {
-		filter: invert(1);
-		background-color: #000;
-		transition: filter .4s;
-	}
-
-	body.night_mode img,
-	body.night_mode .has-background-dim,
-	body.night_mode .wp-block-embed{
-		filter: invert(1);
-	}
-}
 
 /*--------------------------------------------------------------
 # Woocommerce
