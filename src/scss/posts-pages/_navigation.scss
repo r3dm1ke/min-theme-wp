@@ -1,0 +1,45 @@
+@import '../colors';
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.nav-next, .nav-previous {
+  border: 1px solid $color-brand-dark;
+  background-color: $color-brand-light;
+  text-align: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  transition: background-color .2s;
+  text-overflow: ellipsis;
+
+  /* Required for text-overflow to do anything */
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.nav-next:hover,
+.nav-next:focus,
+.nav-next:active,
+.nav-previous:hover,
+.nav-previous:focus,
+.nav-previous:active{
+  background-color: $color-brand-dark;
+}
+
+.nav-next:hover a ,
+.nav-next:focus a ,
+.nav-next:active a ,
+.nav-previous:hover a ,
+.nav-previous:focus a ,
+.nav-previous:active a {
+  color: $color-brand-light;
+}
+
+.nav-next a, .nav-previous a {
+  color: $color-brand-dark;
+  text-transform: lowercase;
+  font-style: normal;
+}

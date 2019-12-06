@@ -1,0 +1,12 @@
+@import '../colors';
+
+.entry-header > .entry-meta > span,
+.entry-header > .entry-meta > span a {
+  font-family: $base-font-family, sans-serif;
+  font-style: italic;
+  color: $color-brand-dark;
+}
+
+.page-title {
+  font-size: $h3_font-size;
+}
