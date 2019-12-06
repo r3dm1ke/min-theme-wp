@@ -20,7 +20,6 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
-# Widgets
 # Content
 	## Posts and pages
 	## Post navigation
@@ -34,22 +33,6 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 # Woocommerce
 # Cookie Banner
 --------------------------------------------------------------*/
-
-/*--------------------------------------------------------------
-# Widgets
---------------------------------------------------------------*/
-
-
-/* Search widget */
-
-
-/*--------------------------------------------------------------
-# Content
---------------------------------------------------------------*/
-#page {
-	max-width: 64rem;
-	margin: auto;
-}
 
 /* Footer */
 .site-info {
