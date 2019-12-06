@@ -17,7 +17,8 @@ img, .has-background-dim, .wp-block-embed {
   transition: filter .4s;
 }
 /* For IOS & macOS */
-@media screen and prefers-dark-interface {
+//noinspection CssInvalidMediaFeature
+@media screen and (prefers-dark-interface) {
   body.night_mode {
     filter: invert(1);
     background-color: $color-brand-dark;
