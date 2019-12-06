@@ -42,21 +42,6 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 --------------------------------------------------------------*/
 
 
-
-/*--------------------------------------------------------------
-## Archives
---------------------------------------------------------------*/
-.archive .page-title {
-	text-transform: lowercase;
-	opacity: .5;
-}
-
-.archive-description {
-	text-align: center;
-	opacity: .8;
-	text-transform: lowercase;
-}
-
 /*--------------------------------------------------------------
 ## Comments
 --------------------------------------------------------------*/
