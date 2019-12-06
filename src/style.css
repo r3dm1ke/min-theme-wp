@@ -32,20 +32,7 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 /*--------------------------------------------------------------
 # Tables
 --------------------------------------------------------------*/
-table {
-	border-collapse: collapse;
-}
-table, th, td {
-	border: 1px solid #ddd;
-}
-th, td {
-	padding: 1rem;
-	text-align: left;
-}
 
-th {
-	font-weight: 700;
-}
 
 
 /*--------------------------------------------------------------
