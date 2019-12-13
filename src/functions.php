@@ -62,14 +62,7 @@ if ( ! function_exists( 'min_setup' ) ) :
 		if (!function_exists('searchform_hideable')) {
 			function searchform_hideable() {
 				?>
-				<form aria-hidden="true" role="search" method="get" class="search-form hidden" action="<?php echo esc_attr(home_url( '/' )); ?>" name="form">
-					<label>
-						<span class="screen-reader-text"><?php esc_html_e('Search for:', 'min') ?></span>
-						<input type="search" class="search-field" placeholder="Search ..." value="" name="s">
-					</label>
-					<a class="search-submit glitch" tabindex='0' onclick="form.submit()"><?php esc_html_e('search', 'min'); ?></a>
-					<a class="search-hide glitch" tabindex='0' id="search-hide-trigger"><?php esc_html_e('hide', 'min'); ?></a>
-				</form>
+
 				<?php
 			}
 		}
@@ -295,6 +288,11 @@ require get_template_directory() . '/inc/customizer.php';
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
+
+/*
+ * Theme controls in header
+ */
+require get_template_directory() . '/inc/header-theme-controls.php';
 
 /**
  * Glitch effect
