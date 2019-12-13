@@ -1,4 +1,30 @@
 <?php
+
+if ( ! function_exists( 'min_enqueue_theme_controls' ) ) {
+	function min_enqueue_theme_controls() {
+        add_filter('wp_nav_menu_menu-1_items', 'min_get_night_mode_toggle');
+        add_filter('wp_nav_menu_menu-1_items', 'min_get_search_bar_toggle');
+	}
+}
+
+if ( ! function_exists( 'min_get_night_mode_toggle' ) ) {
+	function min_get_night_mode_toggle($items) {
+	    $toggle_name = esc_html__('night mode', 'min');
+        return $items . '<a href="#" data-glitch="' . $toggle_name . '" class="glitch">
+               ' . $toggle_name . '</a>';
+	}
+}
+
+if ( ! function_exists( 'min_get_search_bar_toggle' ) ) {
+	function min_get_search_bar_toggle($items) {
+        $toggle_name = esc_html__('search', 'min');
+        return $items . '<a href="#" data-glitch=' . $toggle_name . ' class="glitch">
+               ' . $toggle_name . '</a>';
+	}
+}
+
+min_enqueue_theme_controls();
+
 if (!function_exists('min_render_theme_controls')) {
 	function min_render_theme_controls() {
 		$min_night_mode = get_theme_mod('min_night_mode_turned_on');

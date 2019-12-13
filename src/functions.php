@@ -59,14 +59,6 @@ if ( ! function_exists( 'min_setup' ) ) :
 			'caption',
 		) );
 
-		if (!function_exists('searchform_hideable')) {
-			function searchform_hideable() {
-				?>
-
-				<?php
-			}
-		}
-
 		// Set up the WordPress core custom background feature.
 		add_theme_support( 'custom-background', apply_filters( 'min_custom_background_args', array(
 			'default-color' => 'ffffff',

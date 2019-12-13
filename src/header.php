@@ -55,12 +55,11 @@
 
             <nav id="site-navigation" class="main-navigation">
                 <?php
-                searchform_hideable();
                 wp_nav_menu( array(
+                    'menu'              => 'menu-1',
                     'theme_location'    => 'menu-1',
                     'container_class'   => 'primary-menu-container'
                 ) );
-                min_render_theme_controls();
                 ?>
             </nav><!-- #site-navigation -->
             <?php if ( get_header_image() ) : ?>
