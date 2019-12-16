@@ -29,8 +29,8 @@
         <header id="masthead" class="site-header">
             <div class="site-branding">
 
-                <?php the_custom_logo(); ?>
                 <?php
+                    the_custom_logo();
                     $min_blog_name = get_bloginfo('name');
                     $min_blog_description = get_bloginfo( 'description', 'display' );
                 ?>

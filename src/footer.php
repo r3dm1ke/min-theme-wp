@@ -25,7 +25,6 @@
 </div><!-- #page -->
 
 <?php
-min_get_glitch_stylesheet();
 wp_footer();
 ?>
 

@@ -187,16 +187,7 @@ function min_styles_to_footer() {
 
 add_action( 'get_footer', 'min_styles_to_footer' );
 
-/* Add custom attrubutes to menu links for glitch effect */
-add_filter( 'nav_menu_link_attributes', 'min_glitch_menu_atts', 10, 3 );
-function min_glitch_menu_atts( $atts, $item, $args )
-{
-  $atts['data-glitch'] = $item->title;
-  $atts['class'] = 'glitch';
-  return $atts;
-}
-
-/** Visual Composer Support */
+	/** Visual Composer Support */
 // Before VC Init
 add_action( 'vc_before_init', 'vc_before_init_actions' );
 

@@ -1,109 +1,37 @@
 <?php
 
-if (!function_exists('min_get_glitch_stylesheet')) {
-	function min_get_glitch_stylesheet() {
-		if (get_theme_mod('min_glitch_turned_on') == '1') {
-			?>
-			<style>
-				.glitch {
-					text-decoration: none;
-					margin: 0;
-					position: relative;
-                    display: block;
-				}
+if (get_theme_mod('min_glitch_turned_on') == '1') {
 
-				.glitch:before, .glitch:after {
-					display: block;
-					content: attr(data-glitch);
-					width: 100%;
-					position: absolute;
-					top: 0;
-					right: 0;
-					bottom: 0;
-					left: 0;
-					opacity: 0;
-				}
+    add_filter('body_class', 'min_add_glitch_body_class');
+	if ( ! function_exists( 'min_add_glitch_body_class' ) ) {
+		function min_add_glitch_body_class($classes) {
+			return array_merge( $classes, array( 'with-glitch' ) );
+		}
+	}
 
-				.glitch:after {
-					color: <?php echo esc_html(get_theme_mod('min_glitch_color_2')); ?>;
-					z-index: -2;
-				}
+	add_filter( 'nav_menu_link_attributes', 'min_glitch_menu_atts', 10, 3 );
+	if ( ! function_exists( 'min_glitch_menu_atts' ) ) {
+		function min_glitch_menu_atts( $atts, $item, $args ) {
+			$atts['data-glitch'] = $item->title;
+			$atts['class']       = 'glitch';
 
-				.glitch:before {
-					color: <?php echo esc_html(get_theme_mod('min_glitch_color_1')); ?>;
-					z-index: -1;
-				}
+			return $atts;
+		}
+	}
 
-				.glitch:hover:before,
-                .glitch:focus:before,
-                .glitch:active:before {
-					-webkit-animation: glitch 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both 10;
-					animation: glitch 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both 10;
-					opacity: .8;
-				}
+	add_action( 'wp_footer', 'min_get_glitch_color_stylesheet' );
+	if ( ! function_exists( 'min_get_glitch_color_stylesheet' ) ) {
+		function min_get_glitch_color_stylesheet() { ?>
+            <style>
+                .glitch:after {
+                    color: <?php echo esc_html(get_theme_mod('min_glitch_color_2')); ?>;
+                }
 
-                .glitch:hover:after,
-                .glitch:focus:after,
-                .glitch:active:after {
-					animation: glitch 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both 10;
-					opacity: .8;
-				}
-
-				@-webkit-keyframes glitch {
-					0% {
-						-webkit-transform: translate(0);
-						transform: translate(0);
-					}
-					20% {
-						-webkit-transform: translate(-3px, 3px);
-						transform: translate(-3px, 3px);
-					}
-					40% {
-						-webkit-transform: translate(-3px, -3px);
-						transform: translate(-3px, -3px);
-					}
-					60% {
-						-webkit-transform: translate(3px, 3px);
-						transform: translate(3px, 3px);
-					}
-					80% {
-						-webkit-transform: translate(3px, -3px);
-						transform: translate(3px, -3px);
-					}
-					to {
-						-webkit-transform: translate(0);
-						transform: translate(0);
-					}
-				}
-
-				@keyframes glitch {
-					0% {
-						-webkit-transform: translate(0);
-						transform: translate(0);
-					}
-					20% {
-						-webkit-transform: translate(-3px, 3px);
-						transform: translate(-3px, 3px);
-					}
-					40% {
-						-webkit-transform: translate(-3px, -3px);
-						transform: translate(-3px, -3px);
-					}
-					60% {
-						-webkit-transform: translate(3px, 3px);
-						transform: translate(3px, 3px);
-					}
-					80% {
-						-webkit-transform: translate(3px, -3px);
-						transform: translate(3px, -3px);
-					}
-					to {
-						-webkit-transform: translate(0);
-						transform: translate(0);
-					}
-				}
-			</style>
-			<?php
+                .glitch:before {
+                    color: <?php echo esc_html(get_theme_mod('min_glitch_color_1')); ?>;
+                }
+            </style> <?php
 		}
 	}
 }
+
