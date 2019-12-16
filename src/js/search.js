@@ -21,14 +21,15 @@ let getSiblings = function (elem) {
     document.addEventListener('DOMContentLoaded', function() {
         const search_trigger = document.querySelector('.search-trigger a');
         const search_hide_trigger = document.querySelector('#search-hide-trigger');
-        const search_form = document.querySelector('.search-form');
+        const search_form = document.querySelector('.search-form-hideable');
         const siblings = getSiblings(search_form);
         siblings.push(search_form);
+        console.log(siblings);
 
         const toggle_search = function() {
             for (let sibling of siblings) {
-                sibling.classList.toggle('hidden');
-                if (sibling.classList.contains('hidden')) sibling.setAttribute('aria-hidden', 'true');
+                sibling.classList.toggle('hidden-by-search');
+                if (sibling.classList.contains('hidden-by-search')) sibling.setAttribute('aria-hidden', 'true');
                 else sibling.setAttribute('aria-hidden', 'false');
             }
         };
