@@ -282,6 +282,11 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 }
 
 /*
+ * Header custom image
+ */
+require get_template_directory() . '/inc/header-image.php';
+
+/*
  * Theme controls in header
  */
 require get_template_directory() . '/inc/header-theme-controls.php';
