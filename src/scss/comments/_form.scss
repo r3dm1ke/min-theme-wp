@@ -18,42 +18,19 @@
   textarea#comment
   {
     width: 100%;
+    height: 100%;
     background: none;
-    border-bottom: 1px solid #aaa;
-    margin-bottom: 1rem;
-  }
-
-  input#author:focus,
-  input#author:active,
-  input#author:hover,
-  textarea#comment:focus,
-  textarea#comment:active,
-  textarea#comment:hover {
-    border-color: $color-brand-dark;
-  }
-
-  input#submit {
     padding: .5rem;
-    line-height: 1.5;
-    text-align: left;
-    font-size: 0.875rem;
-    color: #404040;
-    border-color: #aaa;
-    width: 100%;
-  }
-
-  input#submit:hover {
-    color: $color-brand-light;
-    border-color: $color-brand-dark;
-  }
-  p {
-    margin: 0;
-    input[type='text'],
-    textarea {
-      padding: .5rem;
-    }
   }
   .comment-form-author {
     order: -1;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  .form-submit .submit {
+    width: 100%;
   }
 }
