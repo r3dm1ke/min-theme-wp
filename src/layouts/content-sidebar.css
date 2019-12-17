@@ -33,6 +33,7 @@
 	.site-content {
 		display: flex;
 		flex-direction: row;
+		justify-content: space-around;
 	}
 	.site-content .widget-area {
 		min-width: 12.5rem;
