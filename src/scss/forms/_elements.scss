@@ -1,6 +1,6 @@
 @import '../colors';
 
-$color-form-background: #ddd;
+$color-form-border: #aaa;
 
 button,
 input[type="button"],
@@ -53,8 +53,7 @@ input[type="datetime"],
 input[type="datetime-local"],
 input[type="color"],
 textarea {
-  background-color: $pre_text-background;
-  border: none;
+  border: 1px solid $color-form-border;
   padding: 3px;
   transition: background-color .3s;
 }
@@ -74,7 +73,23 @@ input[type="time"]:focus,
 input[type="datetime"]:focus,
 input[type="datetime-local"]:focus,
 input[type="color"]:focus,
-textarea:focus {
+textarea:focus,
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="url"]:hover,
+input[type="password"]:hover,
+input[type="search"]:hover,
+input[type="number"]:hover,
+input[type="tel"]:hover,
+input[type="range"]:hover,
+input[type="date"]:hover,
+input[type="month"]:hover,
+input[type="week"]:hover,
+input[type="time"]:hover,
+input[type="datetime"]:hover,
+input[type="datetime-local"]:hover,
+input[type="color"]:hover,
+textarea:hover {
   outline: none;
-  background-color: $color-form-background;
+  border-color: $color-brand-dark;
 }
