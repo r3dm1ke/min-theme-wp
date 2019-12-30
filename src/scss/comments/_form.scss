@@ -3,6 +3,11 @@
 .comment-form {
   display: flex;
   flex-direction: column;
+
+  .comment-form-comment {
+    margin-top: -2px;
+  }
+
   label {
     display: none;
   }
@@ -11,7 +16,8 @@
     margin-left: .5rem;
   }
   p.comment-form-cookies-consent {
-    margin-bottom: 1rem;
+    margin-top: 1rem;
+    order: 10;
   }
 
   input#author,

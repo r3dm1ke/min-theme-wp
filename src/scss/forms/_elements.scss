@@ -14,9 +14,9 @@ input[type="submit"],
   border: 1px solid $color-brand-dark;
   color: $color-brand-dark;
   font-size: $body_font-size;
-  line-height: 1;
+  line-height: 1.6;
   text-transform: lowercase;
-  padding: .6em 1em .6em;
+  padding: 0.5rem;
   transition: background-color, color .2s;
   text-overflow: ellipsis;
   white-space: nowrap;

@@ -14,6 +14,10 @@ textarea {
   flex-wrap: wrap;
   flex-direction: column;
 
+  .comment_flex_right_wrapper {
+    width: 100%;
+  }
+
   .comment-list {
     margin-left: 0;
     padding-left: 0;

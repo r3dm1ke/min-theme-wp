@@ -44,7 +44,7 @@ if ( ! function_exists( 'min_get_hideable_search_form' ) ) {
 					<span class="screen-reader-text">
 					    ' . esc_html__('Search for:', 'min') . '
 	                </span>
-					<input type="search" class="search-field" placeholder="Search ..." value="" name="s">
+					<input type="search" class="search-field" placeholder="search ..." value="" name="s">
 				</label>
 				<a 
 	                class="search-submit glitch" 
