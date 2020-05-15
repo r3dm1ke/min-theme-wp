@@ -4,12 +4,12 @@ if (!function_exists('min_display_comment_form')) {
 		// Remove email and url fields
 		add_filter( 'comment_form_logged_in', '__return_empty_string' );
 		function min_remove_crap_from_comment_form($fields) {
-			unset($fields['email']);
 			unset($fields['url']);
 
 			// Set up placeholders
 			foreach( $fields as &$field ) {
 				$field = str_replace( 'id="author"', 'id="author" placeholder="name*"', $field );
+				$field = str_replace( 'id="email"', 'id="email" placeholder="email*"', $field );
 			}
 			return $fields;
 		}

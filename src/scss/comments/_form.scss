@@ -21,6 +21,7 @@
   }
 
   input#author,
+  input#email,
   textarea#comment
   {
     width: 100%;
@@ -29,6 +30,10 @@
     padding: .5rem;
   }
   .comment-form-author {
+    order: -2;
+  }
+
+  .comment-form-email {
     order: -1;
   }
 
